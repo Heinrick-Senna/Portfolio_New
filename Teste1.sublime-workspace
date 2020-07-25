@@ -1,0 +1,414 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Icon",
+				"Icon.png\tw:377 h:211"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"aling",
+				"align-self\tproperty"
+			],
+			[
+				"back",
+				"background-repeat\tproperty"
+			],
+			[
+				"g",
+				"rgba()\tbackground"
+			],
+			[
+				"bakc",
+				"background-size\tproperty"
+			],
+			[
+				"u",
+				"url()\tbackground"
+			],
+			[
+				"text",
+				"text-transform\tproperty"
+			],
+			[
+				"bloc",
+				"block\tdisplay"
+			],
+			[
+				"in",
+				"inline\tdisplay"
+			],
+			[
+				"mar",
+				"margin\tproperty"
+			],
+			[
+				"a",
+				"static\tposition"
+			],
+			[
+				"paddi",
+				"padding\tproperty"
+			],
+			[
+				"ba",
+				"background-position\tproperty"
+			],
+			[
+				"mai",
+				"margin-top\tproperty"
+			],
+			[
+				"co",
+				"table-caption\tdisplay"
+			],
+			[
+				"fel",
+				"inline-flex\tdisplay"
+			],
+			[
+				"ta",
+				"table-column\tdisplay"
+			],
+			[
+				"r",
+				"right\tbackground"
+			],
+			[
+				"tran",
+				"transition\tproperty"
+			],
+			[
+				"tra",
+				"transition-duration\tproperty"
+			],
+			[
+				"pad",
+				"padding\tproperty"
+			],
+			[
+				"CO",
+				"color\tproperty"
+			],
+			[
+				"bac",
+				"background\tproperty"
+			],
+			[
+				"paddin",
+				"padding-top\tproperty"
+			],
+			[
+				"textc",
+				"text-decoration\tproperty"
+			],
+			[
+				"text-",
+				"text-indent\tproperty"
+			],
+			[
+				"sl",
+				"style\tTag"
+			],
+			[
+				"l",
+				"link\tTag"
+			],
+			[
+				"s",
+				"sticky\tposition"
+			],
+			[
+				"e",
+				"height\tproperty"
+			],
+			[
+				"tex",
+				"text-align\tproperty"
+			],
+			[
+				"text-deco",
+				"text-decoration-color\tproperty"
+			],
+			[
+				"te",
+				"text-decoration-style\tproperty"
+			],
+			[
+				"border-r",
+				"border-radius\tproperty"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"met",
+				"meta\tTag"
+			],
+			[
+				"sp",
+				"script\tTag"
+			],
+			[
+				"box",
+				"box-shadow\tproperty"
+			],
+			[
+				"c",
+				"cursor\tproperty"
+			],
+			[
+				"Mar",
+				"margin\tproperty"
+			],
+			[
+				"i",
+				"inline-block\tdisplay"
+			],
+			[
+				"marg",
+				"margin\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Install Package Control",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"clear",
+			"git add ."
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/PICHAU/Desktop/Projetos Git/Teste1"
+	],
+	"file_history":
+	[
+		"/C/Users/PICHAU/Desktop/Projetos/MainMenu - Aula Akira/Home.css",
+		"/C/Program Files/Git/ReleaseNotes.html",
+		"/C/Users/PICHAU/Desktop/Projetos/Projeto1/HTML/Motos.html",
+		"/C/Users/PICHAU/Desktop/Projetos/MainMenu - Aula Akira/Home.html",
+		"/C/Users/PICHAU/Desktop/(4) 🏖️ SUMMER Weight Lifting Simulator 4 - Roblox.html",
+		"/C/Users/PICHAU/AppData/Local/Temp/Al - Salvar para Web/Esboço-Canal_001.tmp/Esboço-Canal.html",
+		"/C/Users/PICHAU/Desktop/Projetos/Relógio/home.html",
+		"/C/Users/PICHAU/Desktop/Projetos/Relógio/home.css",
+		"/C/Users/PICHAU/Downloads/alo.html",
+		"/C/Users/PICHAU/Desktop/Site Teclado/TecladoHome.html",
+		"/C/Users/PICHAU/Desktop/Site Teclado/HomeTeclado.html",
+		"/C/Users/PICHAU/Desktop/aula.html",
+		"/C/Steam/userdata/258651364/218620/remote/save000.sav",
+		"/C/Steam/userdata/258651364/218620/remote/save098.sav",
+		"/C/Users/PICHAU/Desktop/PW/HTML/Index - Marcelo Heinrick Romeiro Senna Info-A.html",
+		"/C/Users/PICHAU/Desktop/PW/CSS/Home.css",
+		"/C/Users/PICHAU/Desktop/PW/HTML/Index.html",
+		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/User/View In Browser.sublime-settings",
+		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/User/ColorPicker.sublime-settings",
+		"/C/Users/PICHAU/Desktop/PW/IMG",
+		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings",
+		"/C/Users/PICHAU/Desktop/Projetos/HTML/Motos.html",
+		"/C/Users/PICHAU/Desktop/Projetos/CSS/Principal.css",
+		"/C/Users/PICHAU/Desktop/Projetos/Motos.html",
+		"/C/Users/PICHAU/Desktop/Projetos/startbootstrap-sb-admin-2-gh-pages/index.html",
+		"/C/Users/PICHAU/Desktop/Projetos/Motos/HTML/Home.html",
+		"/C/Users/PICHAU/Desktop/Projetos/Motos/CSS/Principal.css",
+		"/C/Users/PICHAU/Desktop/Projetos/HTML/Home.html"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"play",
+			"pie",
+			"e\"",
+			"%;\n",
+			"\t\t\n",
+			"li",
+			"div",
+			"\">",
+			">\n",
+			"dt",
+			"Motos"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Teste1.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Home.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 156.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
