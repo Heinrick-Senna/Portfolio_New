@@ -1,18 +1,20 @@
-$color1: red;
-$color2: blue;
-$size1: 14px;
-$tema: true;
-$maincolor: 1;
+$mainColor: black;
+$mainText: Agency FB;
 
-@if($tema: true) {
-	$maincolor: $color2;
-}
+ #HeadTittle {
+ 	background-color: rgba(20,20,20,0.4);
+ 	border-radius: 20px;
+ }
+
  #Tittle1 {
- 	color: $maincolor;
- 	font: normal Arial;
+ 	color: $mainColor;
+ 	font: 24px $mainText;
  }
 
  #Logo {
- 	align-self: center;
  	width: 100px;
+ }
+
+ hr{
+ 	background-color: blue;
  }
