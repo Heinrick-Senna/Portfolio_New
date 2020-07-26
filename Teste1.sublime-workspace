@@ -200,6 +200,26 @@
 		"selected_items":
 		[
 			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"SASS",
+				"Set Syntax: SCSS"
+			],
+			[
+				"packe",
+				"Package Control: Remove Package"
+			],
+			[
 				"color",
 				"Color Picker"
 			],
@@ -247,6 +267,8 @@
 	"file_history":
 	[
 		"/C/Users/PICHAU/Desktop/Projetos Git/Teste1/Front-End/Home.html",
+		"/C/Users/PICHAU/Desktop/Projetos Git/Teste1/Front-End/SCSS/Design.scss",
+		"/C/Users/PICHAU/Desktop/Projetos Git/Teste1/Front-End/CSS/Design.css",
 		"/C/Users/PICHAU/Desktop/Projetos/MainMenu - Aula Akira/Home.css",
 		"/C/Program Files/Git/ReleaseNotes.html",
 		"/C/Users/PICHAU/Desktop/Projetos/Projeto1/HTML/Motos.html",
@@ -279,7 +301,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{

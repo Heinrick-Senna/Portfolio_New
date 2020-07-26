@@ -1,0 +1,18 @@
+$color1: red;
+$color2: blue;
+$size1: 14px;
+$tema: true;
+$maincolor: 1;
+
+@if($tema: true) {
+	$maincolor: $color2;
+}
+ #Tittle1 {
+ 	color: $maincolor;
+ 	font: normal Arial;
+ }
+
+ #Logo {
+ 	align-self: center;
+ 	width: 100px;
+ }
