@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin-left\tproperty"
+			],
+			[
+				"li",
+				"li\tTag"
+			],
+			[
+				"rg",
+				"rgba()\tbackground-color"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"i",
+				"img\tTag"
+			],
+			[
 				"s",
 				"script\tTag"
 			],
@@ -12,20 +36,12 @@
 				"Icon.png\tw:377 h:211"
 			],
 			[
-				"li",
-				"link\tTag"
-			],
-			[
 				"font",
 				"font-size\tproperty"
 			],
 			[
 				"aling",
 				"align-self\tproperty"
-			],
-			[
-				"back",
-				"background-repeat\tproperty"
 			],
 			[
 				"g",
@@ -50,10 +66,6 @@
 			[
 				"in",
 				"inline\tdisplay"
-			],
-			[
-				"mar",
-				"margin\tproperty"
 			],
 			[
 				"a",
@@ -102,10 +114,6 @@
 			[
 				"CO",
 				"color\tproperty"
-			],
-			[
-				"bac",
-				"background\tproperty"
 			],
 			[
 				"paddin",
@@ -176,10 +184,6 @@
 				"margin\tproperty"
 			],
 			[
-				"i",
-				"inline-block\tdisplay"
-			],
-			[
 				"marg",
 				"margin\tproperty"
 			]
@@ -187,6 +191,41 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Front-End/Home.html",
+			"settings":
+			{
+				"buffer_size": 2462,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Front-End/SCSS/Design.scss",
+			"settings":
+			{
+				"buffer_size": 470,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Front-End/CSS/Design.css",
+			"settings":
+			{
+				"buffer_size": 297,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Front-End/Script/MainScript.js",
+			"settings":
+			{
+				"buffer_size": 1672,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -202,6 +241,10 @@
 			[
 				"instal",
 				"Package Control: Install Package"
+			],
+			[
+				"syta",
+				"Set Syntax: JavaScript"
 			],
 			[
 				"pack",
@@ -266,8 +309,8 @@
 	],
 	"file_history":
 	[
-		"/C/Users/PICHAU/Desktop/Projetos Git/Teste1/Front-End/Home.html",
 		"/C/Users/PICHAU/Desktop/Projetos Git/Teste1/Front-End/SCSS/Design.scss",
+		"/C/Users/PICHAU/Desktop/Projetos Git/Teste1/Front-End/Home.html",
 		"/C/Users/PICHAU/Desktop/Projetos Git/Teste1/Front-End/CSS/Design.css",
 		"/C/Users/PICHAU/Desktop/Projetos/MainMenu - Aula Akira/Home.css",
 		"/C/Program Files/Git/ReleaseNotes.html",
@@ -301,7 +344,7 @@
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 43.0
 	},
 	"find_in_files":
 	{
@@ -315,6 +358,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"selecT",
+			"selected",
+			"\"Theme",
 			"play",
 			"pie",
 			"e\"",
@@ -343,18 +389,212 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Front-End/Home.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2462,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								754,
+								754
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Front-End/SCSS/Design.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 470,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								142,
+								142
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Front-End/CSS/Design.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 297,
+						"regions":
+						{
+							"col_000000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										196,
+										200
+									]
+								],
+								"scope": "col_000000FF"
+							},
+							"col_000000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
+								"regions":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_808080FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										245,
+										249
+									]
+								],
+								"scope": "col_808080FF"
+							},
+							"col_808080FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_808080FF_circle.png",
+								"regions":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_CECECEFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										154,
+										161
+									],
+									[
+										288,
+										295
+									]
+								],
+								"scope": "col_CECECEFF"
+							},
+							"col_CECECEFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_CECECEFF_circle.png",
+								"regions":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								45,
+								45
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Front-End/Script/MainScript.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1672,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1431,
+								1431
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 100.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 30.0
 	},
 	"input":
 	{
-		"height": 40.0
+		"height": 41.0
 	},
 	"layout":
 	{
@@ -387,7 +627,7 @@
 	"project": "Teste1.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 56.0
 	},
 	"save_all_on_build": true,
 	"select_file":

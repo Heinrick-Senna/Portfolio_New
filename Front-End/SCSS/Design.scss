@@ -1,14 +1,28 @@
-$mainColor: black;
+$mainColor: #CECECE;
 $mainText: Agency FB;
+$mainTextColor: black;
+
+ #FloatTheme {
+ 	position: absolute;
+ 	cursor: pointer;
+ 	margin-left: 93.7%
+ }
+
+ #FloatTheme li {
+ 	position: static;
+ 	list-style: none;
+ 	display: inline;
+ }
 
  #HeadTittle {
- 	background-color: rgba(20,20,20,0.4);
+ 	background-color: $mainColor;
  	border-radius: 20px;
  }
 
  #Tittle1 {
- 	color: $mainColor;
+ 	color: $mainTextColor;
  	font: 24px $mainText;
+ 	text-shadow: 0px 2px 5px gray;
  }
 
  #Logo {
@@ -16,5 +30,5 @@ $mainText: Agency FB;
  }
 
  hr{
- 	background-color: blue;
+ 	background-color: $mainColor;
  }
