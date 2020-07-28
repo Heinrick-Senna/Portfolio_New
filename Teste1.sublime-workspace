@@ -195,7 +195,25 @@
 			"file": "Front-End/SCSS/Design.scss",
 			"settings":
 			{
-				"buffer_size": 1002,
+				"buffer_size": 1005,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Front-End/Script/MainScript.js",
+			"settings":
+			{
+				"buffer_size": 3926,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Front-End/Home.html",
+			"settings":
+			{
+				"buffer_size": 3253,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -281,6 +299,7 @@
 	[
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1",
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1/Front-End",
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1/Front-End/Script",
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1/Front-End/SCSS"
 	],
 	"file_history":
@@ -370,7 +389,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -379,7 +398,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1002,
+						"buffer_size": 1005,
 						"regions":
 						{
 							"col_00000066":
@@ -388,8 +407,8 @@
 								"regions":
 								[
 									[
-										798,
-										813
+										801,
+										816
 									]
 								],
 								"scope": "col_00000066"
@@ -401,8 +420,8 @@
 								"regions":
 								[
 									[
-										765,
-										765
+										768,
+										768
 									]
 								],
 								"scope": "col_gutter"
@@ -463,8 +482,8 @@
 								"regions":
 								[
 									[
-										542,
-										546
+										545,
+										549
 									]
 								],
 								"scope": "col_808080FF"
@@ -476,8 +495,8 @@
 								"regions":
 								[
 									[
-										515,
-										515
+										518,
+										518
 									]
 								],
 								"scope": "col_gutter"
@@ -536,8 +555,8 @@
 						"selection":
 						[
 							[
-								944,
-								944
+								455,
+								455
 							]
 						],
 						"settings":
@@ -546,6 +565,64 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 195.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Front-End/Script/MainScript.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3926,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3890,
+								3890
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Front-End/Home.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3253,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								827,
+								827
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
