@@ -5,7 +5,7 @@
 		[
 			[
 				"mar",
-				"margin-left\tproperty"
+				"margin-top\tproperty"
 			],
 			[
 				"li",
@@ -192,36 +192,10 @@
 	"buffers":
 	[
 		{
-			"file": "Front-End/Home.html",
-			"settings":
-			{
-				"buffer_size": 2462,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "Front-End/SCSS/Design.scss",
 			"settings":
 			{
-				"buffer_size": 470,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Front-End/CSS/Design.css",
-			"settings":
-			{
-				"buffer_size": 297,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Front-End/Script/MainScript.js",
-			"settings":
-			{
-				"buffer_size": 1672,
+				"buffer_size": 1002,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -305,10 +279,16 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/PICHAU/Desktop/Projetos Git/Teste1"
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1",
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1/Front-End",
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1/Front-End/SCSS"
 	],
 	"file_history":
 	[
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1/Front-End/Script/MainScript.js",
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1/Front-End/SCSS/Design.scss",
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1/Front-End/Home.html",
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1/Front-End/CSS/Design.css",
 		"/C/Users/PICHAU/Desktop/Projetos Git/Teste1/Front-End/SCSS/Design.scss",
 		"/C/Users/PICHAU/Desktop/Projetos Git/Teste1/Front-End/Home.html",
 		"/C/Users/PICHAU/Desktop/Projetos Git/Teste1/Front-End/CSS/Design.css",
@@ -358,6 +338,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"relative",
 			"selecT",
 			"selected",
 			"\"Theme",
@@ -389,83 +370,51 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Front-End/Home.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2462,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								754,
-								754
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "Front-End/SCSS/Design.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 470,
+						"buffer_size": 1002,
 						"regions":
 						{
-						},
-						"selection":
-						[
-							[
-								142,
-								142
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Front-End/CSS/Design.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 297,
-						"regions":
-						{
+							"col_00000066":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										798,
+										813
+									]
+								],
+								"scope": "col_00000066"
+							},
+							"col_00000066_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_00000066_circle.png",
+								"regions":
+								[
+									[
+										765,
+										765
+									]
+								],
+								"scope": "col_gutter"
+							},
 							"col_000000FF":
 							{
 								"flags": 16,
 								"regions":
 								[
 									[
-										196,
-										200
+										110,
+										115
 									]
 								],
 								"scope": "col_000000FF"
@@ -477,8 +426,33 @@
 								"regions":
 								[
 									[
-										0,
-										0
+										94,
+										94
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_575757FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										38,
+										45
+									]
+								],
+								"scope": "col_575757FF"
+							},
+							"col_575757FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_575757FF_circle.png",
+								"regions":
+								[
+									[
+										21,
+										21
 									]
 								],
 								"scope": "col_gutter"
@@ -489,8 +463,8 @@
 								"regions":
 								[
 									[
-										245,
-										249
+										542,
+										546
 									]
 								],
 								"scope": "col_808080FF"
@@ -502,8 +476,8 @@
 								"regions":
 								[
 									[
-										0,
-										0
+										515,
+										515
 									]
 								],
 								"scope": "col_gutter"
@@ -514,12 +488,8 @@
 								"regions":
 								[
 									[
-										154,
-										161
-									],
-									[
-										288,
-										295
+										12,
+										19
 									]
 								],
 								"scope": "col_CECECEFF"
@@ -536,53 +506,49 @@
 									]
 								],
 								"scope": "col_gutter"
+							},
+							"col_FFFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										138,
+										143
+									]
+								],
+								"scope": "col_FFFFFFFF"
+							},
+							"col_FFFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+								"regions":
+								[
+									[
+										117,
+										117
+									]
+								],
+								"scope": "col_gutter"
 							}
 						},
 						"selection":
 						[
 							[
-								45,
-								45
+								944,
+								944
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 195.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Front-End/Script/MainScript.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1672,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1431,
-								1431
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 100.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -669,7 +635,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 156.0,
+	"side_bar_width": 234.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

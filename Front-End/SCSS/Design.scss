@@ -1,15 +1,25 @@
 $mainColor: #CECECE;
+$secundaryColor: #575757;
 $mainText: Agency FB;
+$secundaryText: Verdana;
 $mainTextColor: black;
+$secundaryTextColor: white;
+
+hr{
+ 	background-color: $mainColor;
+ }
+
+/* Cabeçalho */
 
  #FloatTheme {
  	position: absolute;
  	cursor: pointer;
- 	margin-left: 93.7%
+ 	margin: 0 0 0 93.7%;
+ 	top: 2%;
  }
 
  #FloatTheme li {
- 	position: static;
+ 	position: relative;
  	list-style: none;
  	display: inline;
  }
@@ -29,6 +39,25 @@ $mainTextColor: black;
  	width: 100px;
  }
 
- hr{
- 	background-color: $mainColor;
+/* Card de Informações */
+ #CardInfo {
+ 	background-color: $secundaryColor;
+ 	border-radius: 20px;
+ 	color: $secundaryTextColor;
+ 	font: normal 16px $secundaryText;
+ 	cursor: pointer;
+ 	box-shadow: 0px -15px 40px 7px rgba(0,0,0,0.4);
+ 	transition: all 300ms ease-in;
+ 	margin-top: 1%;
+ }
+
+ #CardInfo:hover {
+ 	margin-top: 0;
+ 	box-shadow: 0 0;
+ 	transition: all 300ms ease-in;
+
+ }
+
+ #CardInfo p {
+ 	text-align: center;
  }
