@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"f",
+				"Foto-1.jpg\tw:1280 h:1024"
+			],
+			[
+				"margin",
+				"margin-left\tproperty"
+			],
+			[
+				"a",
+				"absolute\tposition"
+			],
+			[
 				"mar",
 				"margin-top\tproperty"
 			],
@@ -66,10 +78,6 @@
 			[
 				"in",
 				"inline\tdisplay"
-			],
-			[
-				"a",
-				"static\tposition"
 			],
 			[
 				"paddi",
@@ -191,33 +199,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "Front-End/SCSS/Design.scss",
-			"settings":
-			{
-				"buffer_size": 1005,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Front-End/Script/MainScript.js",
-			"settings":
-			{
-				"buffer_size": 3926,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Front-End/Home.html",
-			"settings":
-			{
-				"buffer_size": 3253,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -304,9 +285,9 @@
 	],
 	"file_history":
 	[
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1/Front-End/Home.html",
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1/Front-End/Script/MainScript.js",
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1/Front-End/SCSS/Design.scss",
-		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1/Front-End/Home.html",
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1/Front-End/CSS/Design.css",
 		"/C/Users/PICHAU/Desktop/Projetos Git/Teste1/Front-End/SCSS/Design.scss",
 		"/C/Users/PICHAU/Desktop/Projetos Git/Teste1/Front-End/Home.html",
@@ -357,6 +338,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"class",
 			"relative",
 			"selecT",
 			"selected",
@@ -389,245 +371,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "Front-End/SCSS/Design.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1005,
-						"regions":
-						{
-							"col_00000066":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										801,
-										816
-									]
-								],
-								"scope": "col_00000066"
-							},
-							"col_00000066_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_00000066_circle.png",
-								"regions":
-								[
-									[
-										768,
-										768
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_000000FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										110,
-										115
-									]
-								],
-								"scope": "col_000000FF"
-							},
-							"col_000000FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
-								"regions":
-								[
-									[
-										94,
-										94
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_575757FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										38,
-										45
-									]
-								],
-								"scope": "col_575757FF"
-							},
-							"col_575757FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_575757FF_circle.png",
-								"regions":
-								[
-									[
-										21,
-										21
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_808080FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										545,
-										549
-									]
-								],
-								"scope": "col_808080FF"
-							},
-							"col_808080FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_808080FF_circle.png",
-								"regions":
-								[
-									[
-										518,
-										518
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_CECECEFF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										12,
-										19
-									]
-								],
-								"scope": "col_CECECEFF"
-							},
-							"col_CECECEFF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_CECECEFF_circle.png",
-								"regions":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_FFFFFFFF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										138,
-										143
-									]
-								],
-								"scope": "col_FFFFFFFF"
-							},
-							"col_FFFFFFFF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
-								"regions":
-								[
-									[
-										117,
-										117
-									]
-								],
-								"scope": "col_gutter"
-							}
-						},
-						"selection":
-						[
-							[
-								455,
-								455
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 195.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Front-End/Script/MainScript.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3926,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3890,
-								3890
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Front-End/Home.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3253,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								827,
-								827
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

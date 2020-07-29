@@ -5,6 +5,10 @@ $secundaryText: Verdana;
 $mainTextColor: black;
 $secundaryTextColor: white;
 
+@mixin mainAnimation {
+	transition: all 300ms ease-in;
+}
+
 hr{
  	background-color: $mainColor;
  }
@@ -29,8 +33,6 @@ hr{
  	border-radius: 20px;
  }
 
- 
-
  #Tittle1 {
  	color: $mainTextColor;
  	font: 24px $mainText;
@@ -49,17 +51,34 @@ hr{
  	font: normal 16px $secundaryText;
  	cursor: pointer;
  	box-shadow: 0px -15px 40px 7px rgba(0,0,0,0.4);
- 	transition: all 300ms ease-in;
- 	margin-top: 1%;
+ 	margin-top: 5%;
+ 	padding: 2%;
+ 	@include mainAnimation;
  }
 
  #CardInfo:hover {
  	margin-top: 0;
  	box-shadow: 0 0;
- 	transition: all 300ms ease-in;
-
+ 	@include mainAnimation;
  }
 
  #CardInfo p {
  	text-align: center;
  }
+ /* Carousel */
+
+ /* FloatIcon Menu */
+
+ #NavBarIcon {
+ 	margin-left: 0.25%;
+ 	top: 26%;
+ 	position: absolute;
+ 	cursor: pointer;
+ 	@include mainAnimation;
+ } 
+
+ #NavBarIcon:hover {
+ 	margin-left: 1.25%;
+ 	@include mainAnimation;
+ }
+
