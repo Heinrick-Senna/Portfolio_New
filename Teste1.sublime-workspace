@@ -212,20 +212,24 @@
 		"selected_items":
 		[
 			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
 				"instal",
 				"Package Control: Install Package"
 			],
 			[
 				"syta",
 				"Set Syntax: JavaScript"
-			],
-			[
-				"pack",
-				"Package Control: Remove Package"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
 			],
 			[
 				"SASS",
@@ -285,6 +289,10 @@
 	],
 	"file_history":
 	[
+		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/User/git_bash.py",
+		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Installed Packages/SideBarEnhancements.sublime-package",
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1/Front-End/Home.html",
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1/Front-End/Script/MainScript.js",
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1/Front-End/SCSS/Design.scss",
