@@ -1,7 +1,7 @@
 window.onload = function () {
 	$('#FloatTheme li').click(function Theme (){
 		var actualTheme = 0 + actualTheme;
-		ThemeSwitch(clickTheme = $(this).attr('id'), verifyTheme = actualTheme);
+		ThemeSwitch(clickTheme = $(this).attr('id').replace(/[^0-9]/g,''), verifyTheme = actualTheme);
 	})
 }
 
@@ -25,5 +25,5 @@ function ThemeSwitch () {
 	}
 
 	
-	Start(actualTheme = clickTheme);
+	Theme(actualTheme = clickTheme);
 }

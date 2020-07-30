@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"text",
+				"text-align"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"chrome",
+				"chrome64"
+			],
+			[
 				"f",
 				"Foto-1.jpg\tw:1280 h:1024"
 			],
@@ -66,10 +78,6 @@
 			[
 				"u",
 				"url()\tbackground"
-			],
-			[
-				"text",
-				"text-transform\tproperty"
 			],
 			[
 				"bloc",
@@ -148,10 +156,6 @@
 				"height\tproperty"
 			],
 			[
-				"tex",
-				"text-align\tproperty"
-			],
-			[
 				"text-deco",
 				"text-decoration-color\tproperty"
 			],
@@ -199,6 +203,33 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Front-End/Home.html",
+			"settings":
+			{
+				"buffer_size": 5314,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Front-End/Script/MainScript.js",
+			"settings":
+			{
+				"buffer_size": 3948,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Front-End/SCSS/Design.scss",
+			"settings":
+			{
+				"buffer_size": 1534,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -212,19 +243,43 @@
 		"selected_items":
 		[
 			[
-				"pack",
+				"list p",
+				"Package Control: List Packages"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"instal",
 				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"colorpick",
+				"Color Picker: Insert Color"
 			],
 			[
 				"list",
 				"Package Control: List Packages"
 			],
 			[
-				"insta",
+				"pack",
 				"Package Control: Install Package"
 			],
 			[
-				"instal",
+				"insta",
 				"Package Control: Install Package"
 			],
 			[
@@ -238,10 +293,6 @@
 			[
 				"packe",
 				"Package Control: Remove Package"
-			],
-			[
-				"color",
-				"Color Picker"
 			],
 			[
 				"ins",
@@ -282,13 +333,27 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1",
-		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1/Front-End",
-		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1/Front-End/Script",
-		"/C/Users/PICHAU/Desktop/Projetos_Git/Teste1/Front-End/SCSS"
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New",
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End",
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/CSS",
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/Script",
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/SCSS"
 	],
 	"file_history":
 	[
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/Script/MainScript.js",
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/SCSS/Design.scss",
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/Home.html",
+		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/Default (Windows).sublime-keymap",
+		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/README.md",
+		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-commands",
+		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/User/ColorPicker.sublime-settings",
+		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/ColorPick/README.md",
+		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/ColorPick/bin/colorpick",
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/CSS/Design.css",
+		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/User/View In Browser.sublime-settings",
+		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings",
 		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
 		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/User/git_bash.py",
@@ -317,11 +382,7 @@
 		"/C/Users/PICHAU/Desktop/PW/HTML/Index - Marcelo Heinrick Romeiro Senna Info-A.html",
 		"/C/Users/PICHAU/Desktop/PW/CSS/Home.css",
 		"/C/Users/PICHAU/Desktop/PW/HTML/Index.html",
-		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
-		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/User/View In Browser.sublime-settings",
-		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/User/ColorPicker.sublime-settings",
 		"/C/Users/PICHAU/Desktop/PW/IMG",
-		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings",
 		"/C/Users/PICHAU/Desktop/Projetos/HTML/Motos.html",
 		"/C/Users/PICHAU/Desktop/Projetos/CSS/Principal.css",
 		"/C/Users/PICHAU/Desktop/Projetos/Motos.html",
@@ -332,7 +393,7 @@
 	],
 	"find":
 	{
-		"height": 43.0
+		"height": 42.0
 	},
 	"find_in_files":
 	{
@@ -346,6 +407,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"li id",
+			"168.71",
 			"class",
 			"relative",
 			"selecT",
@@ -379,18 +442,230 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Front-End/Home.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								769,
+								769
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Front-End/Script/MainScript.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3948,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								112,
+								112
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Front-End/SCSS/Design.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1534,
+						"regions":
+						{
+							"col_00000066":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										933,
+										948
+									]
+								],
+								"scope": "col_00000066"
+							},
+							"col_00000066_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_00000066_circle.png",
+								"regions":
+								[
+									[
+										900,
+										900
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_000000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										110,
+										115
+									]
+								],
+								"scope": "col_000000FF"
+							},
+							"col_000000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
+								"regions":
+								[
+									[
+										94,
+										94
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_575757FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										38,
+										45
+									]
+								],
+								"scope": "col_575757FF"
+							},
+							"col_575757FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_575757FF_circle.png",
+								"regions":
+								[
+									[
+										21,
+										21
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_CECECEFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										12,
+										19
+									]
+								],
+								"scope": "col_CECECEFF"
+							},
+							"col_CECECEFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_CECECEFF_circle.png",
+								"regions":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										138,
+										143
+									]
+								],
+								"scope": "col_FFFFFFFF"
+							},
+							"col_FFFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+								"regions":
+								[
+									[
+										117,
+										117
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								379,
+								379
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 54.0
 	},
 	"input":
 	{
-		"height": 41.0
+		"height": 54.0
 	},
 	"layout":
 	{
@@ -423,7 +698,7 @@
 	"project": "Teste1.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 104.0
 	},
 	"save_all_on_build": true,
 	"select_file":
