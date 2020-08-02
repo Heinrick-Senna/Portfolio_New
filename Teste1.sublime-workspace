@@ -4,16 +4,40 @@
 		"selected_items":
 		[
 			[
-				"rg",
-				"rgba()"
+				"cla",
+				"classList"
+			],
+			[
+				"men",
+				"MenuCheck"
+			],
+			[
+				"Men",
+				"MenuCheck"
+			],
+			[
+				"get",
+				"getAttribute"
+			],
+			[
+				"c",
+				"click"
+			],
+			[
+				"a",
+				"setAttribute"
 			],
 			[
 				"bac",
 				"background-color"
 			],
 			[
-				"get",
-				"getElementById"
+				"back",
+				"background-color"
+			],
+			[
+				"rg",
+				"rgba()"
 			],
 			[
 				"click",
@@ -56,20 +80,12 @@
 				"margin-left\tproperty"
 			],
 			[
-				"a",
-				"absolute\tposition"
-			],
-			[
 				"mar",
 				"margin-top\tproperty"
 			],
 			[
 				"li",
 				"li\tTag"
-			],
-			[
-				"back",
-				"background-color\tproperty"
 			],
 			[
 				"i",
@@ -212,10 +228,6 @@
 				"box-shadow\tproperty"
 			],
 			[
-				"c",
-				"cursor\tproperty"
-			],
-			[
 				"Mar",
 				"margin\tproperty"
 			],
@@ -231,51 +243,7 @@
 			"file": "Front-End/Home.html",
 			"settings":
 			{
-				"buffer_size": 5337,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Front-End/SCSS/Design0.scss",
-			"settings":
-			{
-				"buffer_size": 1642,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Front-End/SCSS/Design2.scss",
-			"settings":
-			{
-				"buffer_size": 1642,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Front-End/CSS/Design1.css",
-			"settings":
-			{
-				"buffer_size": 1106,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Front-End/SCSS/Design1.scss",
-			"settings":
-			{
-				"buffer_size": 1735,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Front-End/Script/MainScript1.js",
-			"settings":
-			{
-				"buffer_size": 4091,
+				"buffer_size": 5820,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -385,19 +353,21 @@
 	[
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New",
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End",
-		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/CSS",
-		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/Script",
-		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/SCSS"
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/Script"
 	],
 	"file_history":
 	[
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/Script/MainScript1.js",
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/SCSS/Design0.scss",
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/Home.html",
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/SCSS/Design1.scss",
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/CSS/Design1.css",
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/SCSS/Design2.scss",
+		"/C/Users/PICHAU/Videos/Gravações/2020-08-01 10-12-27.mp4",
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/Script/MainsScript2.js",
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/Script/MainScript.js",
-		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/Home.html",
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/CSS/Design.css",
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/SCSS/Design.scss",
-		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/SCSS/Design2.scss",
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/CSS/Design2.css",
 		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/Default (Windows).sublime-keymap",
 		"/C/Users/PICHAU/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/README.md",
@@ -496,24 +466,24 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
 					"file": "Front-End/Home.html",
-					"semi_transient": false,
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 5337,
+						"buffer_size": 5820,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								384,
-								384
+								955,
+								973
 							]
 						],
 						"settings":
@@ -525,343 +495,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Front-End/SCSS/Design0.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1642,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								607,
-								607
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Front-End/SCSS/Design2.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1642,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								251,
-								258
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Front-End/CSS/Design1.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1106,
-						"regions":
-						{
-							"col_00000066":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										400,
-										415
-									]
-								],
-								"scope": "col_00000066"
-							},
-							"col_00000066_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_00000066_circle.png",
-								"regions":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_000000FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										538,
-										542
-									]
-								],
-								"scope": "col_000000FF"
-							},
-							"col_000000FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
-								"regions":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_343434FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										45,
-										52
-									]
-								],
-								"scope": "col_343434FF"
-							},
-							"col_343434FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_343434FF_circle.png",
-								"regions":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_4B4B4BFF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										73,
-										80
-									],
-									[
-										110,
-										117
-									]
-								],
-								"scope": "col_4B4B4BFF"
-							},
-							"col_4B4B4BFF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_4B4B4BFF_circle.png",
-								"regions":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_EFEFEFFF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										73,
-										80
-									],
-									[
-										110,
-										117
-									]
-								],
-								"scope": "col_EFEFEFFF"
-							},
-							"col_EFEFEFFF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_EFEFEFFF_circle.png",
-								"regions":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_FFFFFF66":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										636,
-										657
-									]
-								],
-								"scope": "col_FFFFFF66"
-							},
-							"col_FFFFFF66_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_FFFFFF66_circle.png",
-								"regions":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_FFFFFFFF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										73,
-										77
-									],
-									[
-										107,
-										111
-									],
-									[
-										280,
-										284
-									],
-									[
-										508,
-										512
-									]
-								],
-								"scope": "col_FFFFFFFF"
-							},
-							"col_FFFFFFFF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
-								"regions":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"scope": "col_gutter"
-							}
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Front-End/SCSS/Design1.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1735,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								733,
-								733
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 117.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Front-End/Script/MainScript1.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4091,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								256,
-								256
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
 					"type": "text"
 				}
 			]

@@ -19,6 +19,7 @@ $secundaryTextColor: white;
 
 /* Cabeçalho */
  #HeadTittle {
+ 	@include mainAnimation;
  	background-color: $mainColor;
  	border-radius: 20px;
  }
@@ -109,3 +110,34 @@ $secundaryTextColor: white;
  	@include mainAnimation;
  }
 
+ /* MainMenu */
+
+ #InMenu {
+ 	border: 2px solid black;
+ }
+
+ #OutMenu {
+ 	position: absolute;
+ 	top: 40%;
+ 	@include mainAnimation;
+ }
+ 
+/* Esquemas De Classe, Menu */
+
+ .MenuOff {
+ 	display: none;
+ 	@include mainAnimation;
+ }
+
+ .MenuHidden {
+ 	display: block;
+ 	visibility: hidden;
+ 	transition: all 400ms ease-out;
+ 	left: -32%;
+ }
+
+ .MenuOn {
+ 	visibility: visible;
+ 	transition: all 400ms ease-out;
+ 	left: 0;
+ }

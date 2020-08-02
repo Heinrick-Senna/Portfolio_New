@@ -20,6 +20,7 @@ $secundaryTextColor: black;
 
 /* Cabeçalho */
  #HeadTittle {
+ 	@include mainAnimation;
  	background-color: $mainColor;
  	border-radius: 20px;
  }
