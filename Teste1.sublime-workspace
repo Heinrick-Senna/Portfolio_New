@@ -240,10 +240,10 @@
 	"buffers":
 	[
 		{
-			"file": "Front-End/Home.html",
+			"file": "Front-End/Script/MainScript1.js",
 			"settings":
 			{
-				"buffer_size": 5820,
+				"buffer_size": 4493,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -353,7 +353,8 @@
 	[
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New",
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End",
-		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/Script"
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/Script",
+		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/SCSS"
 	],
 	"file_history":
 	[
@@ -471,28 +472,28 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Front-End/Home.html",
-					"semi_transient": true,
+					"file": "Front-End/Script/MainScript1.js",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5820,
+						"buffer_size": 4493,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								955,
-								973
+								4305,
+								4305
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 195.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

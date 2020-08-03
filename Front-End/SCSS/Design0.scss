@@ -17,6 +17,14 @@ $secundaryTextColor: white;
  	background-color: $mainColor;
  }
 
+/* Tela Inicial */
+ #InitialText {
+ 	font: normal 3em Verdana;
+ 	color: black;
+ }
+
+
+
 /* Cabeçalho */
  #HeadTittle {
  	@include mainAnimation;
@@ -59,26 +67,28 @@ $secundaryTextColor: white;
  	background-color: $secundaryColor;
  	border-radius: 20px;
  	color: $secundaryTextColor;
- 	
  	cursor: pointer;
  	padding: 2%;
+	
+
  }
 
  @media (min-width: 1200px) {
  #CardInfo {
- 	box-shadow: 0px -15px 40px 7px rgba(0,0,0,0.4);
+ 	box-shadow: 0px 20px 60px rgba(0,0,0,0.7);
  	margin-top: 5%;
- 	
+ 	transform: rotatex(75deg) translatey(-100%) translatez(-100px);
  	@include mainAnimation;
  }
   #CardInfo:hover {
  	margin-top: 0;
  	box-shadow: 0 0;
  	@include mainAnimation;
+ 	transform: rotatex(0deg);
  }
  }
 
- @media (max-width: 1200px){
+ @media (max-width: 720px){
  #CardInfo {
  	padding: 2%;
  	transition: all 500ms ease-out;
@@ -94,6 +104,10 @@ $secundaryTextColor: white;
  	#MainCarousel {
  		margin-top: 4%;
  	}
+ }
+
+ #MainCarousel:hover {
+ 		cursor: pointer;
  }
 
  /* FloatIcon Menu */

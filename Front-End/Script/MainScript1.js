@@ -38,7 +38,6 @@ function OpenCloseMenu () {
 	var Menu = document.getElementById('OutMenu');
 	var MenuCheck = Menu.getAttribute('class');
 	if (MenuCheck == 'MenuOff'){
-		alert(MenuCheck);
 		Menu.classList.remove('MenuOff');
 		Menu.classList.add('MenuHidden');
 		setTimeout(function(){ 
