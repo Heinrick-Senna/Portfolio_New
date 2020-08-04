@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"Ma",
+				"Mask2.png\tw:678 h:1280"
+			],
+			[
+				"clip",
+				"clip-path\tproperty"
+			],
+			[
+				"Hal",
+				"HalfLogo2.png\tw:678 h:713"
+			],
+			[
+				"mak",
+				"Mask2.png\tw:678 h:1280"
+			],
+			[
+				"se",
+				"setAttribute"
+			],
+			[
+				"div",
+				"divcontainer"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"s",
+				"style\tAttr"
+			],
+			[
 				"cla",
 				"classList"
 			],
@@ -14,10 +46,6 @@
 			[
 				"Men",
 				"MenuCheck"
-			],
-			[
-				"get",
-				"getAttribute"
 			],
 			[
 				"c",
@@ -90,10 +118,6 @@
 			[
 				"i",
 				"img\tTag"
-			],
-			[
-				"s",
-				"script\tTag"
 			],
 			[
 				"Icon",
@@ -239,15 +263,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "Front-End/Script/MainScript1.js",
-			"settings":
-			{
-				"buffer_size": 4493,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -351,13 +366,15 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New",
-		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End",
-		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/Script",
-		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/SCSS"
+		"/C/wamp64/www/Portfolio_New",
+		"/C/wamp64/www/Portfolio_New/Front-End"
 	],
 	"file_history":
 	[
+		"/C/wamp64/www/Portfolio_New/Front-End/AnimationTest.html",
+		"/C/wamp64/www/Portfolio_New/Front-End/Script/MainsScript2.js",
+		"/C/wamp64/www/Portfolio_New/Front-End/Script/MainScript1.js",
+		"/C/Users/PICHAU/.bash_profile",
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/Script/MainScript1.js",
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/SCSS/Design0.scss",
 		"/C/Users/PICHAU/Desktop/Projetos_Git/Portfolio_New/Front-End/Home.html",
@@ -432,6 +449,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"fixed",
 			"li id",
 			"168.71",
 			"class",
@@ -467,38 +485,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "Front-End/Script/MainScript1.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4493,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4305,
-								4305
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 195.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -541,7 +529,7 @@
 	"project": "Teste1.sublime-project",
 	"replace":
 	{
-		"height": 104.0
+		"height": 80.0
 	},
 	"save_all_on_build": true,
 	"select_file":
