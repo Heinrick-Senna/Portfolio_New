@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"di",
+				"display\tproperty"
+			],
+			[
 				"Ma",
 				"Mask2.png\tw:678 h:1280"
 			],
@@ -236,10 +240,6 @@
 				"width\tproperty"
 			],
 			[
-				"di",
-				"div\tTag"
-			],
-			[
 				"met",
 				"meta\tTag"
 			],
@@ -263,6 +263,33 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Front-End/Home.html",
+			"settings":
+			{
+				"buffer_size": 5716,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Front-End/AnimationTest.html",
+			"settings":
+			{
+				"buffer_size": 941,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Front-End/Script/MainsScript2.js",
+			"settings":
+			{
+				"buffer_size": 371,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -367,10 +394,13 @@
 	"expanded_folders":
 	[
 		"/C/wamp64/www/Portfolio_New",
-		"/C/wamp64/www/Portfolio_New/Front-End"
+		"/C/wamp64/www/Portfolio_New/Design",
+		"/C/wamp64/www/Portfolio_New/Front-End",
+		"/C/wamp64/www/Portfolio_New/Front-End/Script"
 	],
 	"file_history":
 	[
+		"/C/wamp64/www/Portfolio_New/Design/Mask.png",
 		"/C/wamp64/www/Portfolio_New/Front-End/AnimationTest.html",
 		"/C/wamp64/www/Portfolio_New/Front-End/Script/MainsScript2.js",
 		"/C/wamp64/www/Portfolio_New/Front-End/Script/MainScript1.js",
@@ -449,6 +479,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"45",
 			"fixed",
 			"li id",
 			"168.71",
@@ -485,8 +516,94 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Front-End/Home.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5716,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								532,
+								532
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Front-End/AnimationTest.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 941,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								348,
+								348
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 126.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Front-End/Script/MainsScript2.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 371,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
