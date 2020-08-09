@@ -1,0 +1,48 @@
+$mainColor: #CECECE;
+$secundaryColor: #575757;
+$mainText: Agency FB;
+$secundaryText: Verdana;
+$mainTextColor: black;
+$secundaryTextColor: white;
+
+/* Colors */
+
+/* Tela Inicial */
+ #InitialText {
+ 	color: black;
+ }
+
+/* Cabeçalho */
+ #HeadTittle {
+ 	background-color: $mainColor;
+ }
+
+ #HeadTittle p {
+ 	font: bold 20px $mainText;
+ }
+
+ hr{
+ 	background-color: $mainColor;
+ }
+
+/* Seleção de Tema */
+ #FloatTheme {
+ 	color: $mainTextColor;
+ }
+
+/* Card de Informações */
+ #CardInfo {
+ 	background-color: $secundaryColor;
+ 	color: $secundaryTextColor;
+ }
+
+ @media (min-width: 1200px) {
+ #CardInfo {
+ 	box-shadow: 0px 20px 60px rgba(0,0,0,0.7);
+ }
+ }
+
+ /* MainMenu */
+ #InMenu {
+ border: 2px solid black; 	
+ }
