@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	setTimeout(function(){
+		Animation();
 	}, 1000);
 
 
@@ -16,6 +17,19 @@ $(document).ready(function(){
 	});
 
 });
+
+
+
+function Animation () {
+	var FirstContainer = $('#AnimationBackground');
+	var SecondContainer = $('#AnimationMask');
+	var FirstImage = $('#FirstHalfLogo');
+	var SecondImage = $('#SecondHalfLogo');
+	FirstContainer.attr('class', 'FirstHalfStart');
+	SecondContainer.attr('class', 'SecondHalfStart');
+		SecondImage.attr('style', 'margin-top: 110%;');
+
+	}
 
 function ThemeSwitch (clickTheme) {
 	var themesIco = document.getElementById('FloatTheme').getElementsByTagName('li');
