@@ -3,26 +3,25 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="imagem/png" href="../Design/Logo3.png">
+	<link rel="icon" type="imagem/png" href="../Design/Logo.png">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link id="ThemeLink" rel="stylesheet" type="text/css" href="CSS/Colors0.css">
 	<link rel="stylesheet" type="text/css" href="CSS/Positions.css">
 	<title>Portifólio</title>
 </head>
-<style type="text/css">
-	   .mask {
-	   	-webkit-mask-image: url(../Design/Mask.png);
-	   	-webkit-mask-repeat: no-repeat;
-	   	-webkit-mask-size: 136px 427.27px;
- }
-</style>
 <!-- Página Principal -->
 <body>
 	
 <!-- Animação -->
 		<div id="AnimationBackground"><img id="FirstHalfLogo" src="../Design/HalfLogo1.png"></div>
-		<div id="AnimationMask" class="mask"><img id="SecondHalfLogo" src="../Design/HalfLogo2.png"></div>
+		<div id="AnimationMask" style="-webkit-mask-image: url('../Design/Mask.png'); -webkit-mask-repeat: no-repeat;
+	-webkit-mask-size: 136px 427.27px;" class="SecondHalfOff"><img id="SecondHalfLogo" src="../Design/HalfLogo2.png"></div>
 
+		<div id="NamesContainer">
+			<img src="../Design/Name1.png">
+			<br>
+			<img src="../Design/Name2.png">
+		</div>
 
 
 
@@ -30,7 +29,7 @@
 	<div class="container" style="display: none;">
 		<div id="HeadTittle" class="row mt-2">
 			<div align="center" class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
-					<img id="Logo" class="py-3 user-select-none" src="../Design/Logo3.png">
+					<img id="Logo" class="py-3 user-select-none" src="../Design/Logo.png">
 			</div>
 			<div align="center" class="mt-2 col-lg-8 col-md-12 col-sm-12 col-xs-12"><br class="user-select-none"><br class="user-select-none">
 				<p align="center">Esse é o meu portfolio Front-End de Bootstrap e Sass!</p>

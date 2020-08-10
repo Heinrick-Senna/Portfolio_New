@@ -28,14 +28,51 @@
 /* Animação */
  #FirstHalfLogo, #SecondHalfLogo {
  	width: 136px;
+ 	transition: all 1s ease-out;
+ 	user-select: none;
  }
 
  #AnimationMask, #AnimationBackground {
  	@include mainAlign;
+ 	transition: all 2s ease;
+ 	user-select: none;
  }
 
+ #AnimationMask {
+ 	width:136px;
+ 	height: 287px;
+ }
 
+ .FirstHalfStart {
+ 	margin-top: -12%;
+ }
 
+ .SecondHalfOff {
+ 	margin-top: 72px;
+ }
+
+ .SecondHalfStart {
+ 	margin-top: -6.75%;
+ }
+
+ #NamesContainer {
+ 	@include mainAlign;
+ 	visibility: hidden;
+ }
+
+ #NamesContainer img {
+ 	height: 60px;
+ }
+
+ /*  width: 150px;
+  -webkit-mask-image: -webkit-gradient(
+    linear, left top, right bottom, 
+    color-stop(0.00,  rgba(0,0,0,1)),
+    color-stop(0.35,  rgba(0,0,0,1)),
+    color-stop(0.50,  rgba(0,0,0,0)),
+    color-stop(0.65,  rgba(0,0,0,0)),
+    color-stop(1.00,  rgba(0,0,0,0)));
+*/
 
 /* Cabeçalho */
  #HeadTittle {

@@ -4,12 +4,36 @@
 		"selected_items":
 		[
 			[
-				"d",
-				"div\tTag"
-			],
-			[
 				"wi",
 				"width"
+			],
+			[
+				"Secon",
+				"SecondImage"
+			],
+			[
+				"Second",
+				"SecondContainer"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"ba",
+				"background\tproperty"
+			],
+			[
+				"a",
+				"attr"
+			],
+			[
+				"d",
+				"div\tTag"
 			],
 			[
 				"css",
@@ -68,10 +92,6 @@
 				"click"
 			],
 			[
-				"a",
-				"setAttribute"
-			],
-			[
 				"bac",
 				"background-color"
 			],
@@ -120,14 +140,6 @@
 				"Foto-1.jpg\tw:1280 h:1024"
 			],
 			[
-				"margin",
-				"margin-left\tproperty"
-			],
-			[
-				"mar",
-				"margin-top\tproperty"
-			],
-			[
 				"li",
 				"li\tTag"
 			],
@@ -170,10 +182,6 @@
 			[
 				"paddi",
 				"padding\tproperty"
-			],
-			[
-				"ba",
-				"background-position\tproperty"
 			],
 			[
 				"mai",
@@ -275,7 +283,7 @@
 			"file": "Front-End/Home.html",
 			"settings":
 			{
-				"buffer_size": 6119,
+				"buffer_size": 6189,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -284,7 +292,7 @@
 			"file": "Front-End/SCSS/Positions.scss",
 			"settings":
 			{
-				"buffer_size": 2116,
+				"buffer_size": 2799,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -293,7 +301,7 @@
 			"file": "Front-End/Script/MainScript1.js",
 			"settings":
 			{
-				"buffer_size": 4530,
+				"buffer_size": 4899,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -418,6 +426,7 @@
 	],
 	"file_history":
 	[
+		"/C/wamp64/www/Portfolio_New/Front-End/CSS/Colors0.css",
 		"/C/wamp64/www/Portfolio_New/Front-End/SCSS/Colors0.scss",
 		"/C/wamp64/www/Portfolio_New/Front-End/SCSS/Positions.scss",
 		"/C/wamp64/www/Portfolio_New/Front-End/Script/MainScript1.js",
@@ -485,7 +494,7 @@
 	],
 	"find":
 	{
-		"height": 42.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -499,6 +508,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"75",
 			";)",
 			"px;",
 			"45",
@@ -538,7 +548,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -547,15 +557,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6119,
+						"buffer_size": 6189,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								641,
-								641
+								905,
+								905
 							]
 						],
 						"settings":
@@ -567,7 +577,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -576,15 +586,89 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2116,
+						"buffer_size": 2799,
 						"regions":
 						{
+							"col_00000001":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1064,
+										1077
+									],
+									[
+										1102,
+										1115
+									],
+									[
+										1140,
+										1153
+									]
+								],
+								"scope": "col_00000001"
+							},
+							"col_00000001_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_00000001_circle.png",
+								"regions":
+								[
+									[
+										1042,
+										1042
+									],
+									[
+										1080,
+										1080
+									],
+									[
+										1118,
+										1118
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_000000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										988,
+										1001
+									],
+									[
+										1026,
+										1039
+									]
+								],
+								"scope": "col_000000FF"
+							},
+							"col_000000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
+								"regions":
+								[
+									[
+										966,
+										966
+									],
+									[
+										1004,
+										1004
+									]
+								],
+								"scope": "col_gutter"
+							}
 						},
 						"selection":
 						[
 							[
-								473,
-								473
+								822,
+								822
 							]
 						],
 						"settings":
@@ -592,10 +676,10 @@
 							"syntax": "Packages/SCSS/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 90.0,
+						"translation.y": 433.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -604,15 +688,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4530,
+						"buffer_size": 4899,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								53,
-								53
+								761,
+								761
 							]
 						],
 						"settings":
@@ -621,10 +705,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 39.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -660,7 +744,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 54.0
+		"height": 24.0
 	},
 	"input":
 	{
@@ -697,7 +781,7 @@
 	"project": "Teste1.sublime-project",
 	"replace":
 	{
-		"height": 80.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
