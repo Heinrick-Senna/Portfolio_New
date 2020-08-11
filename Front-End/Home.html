@@ -10,18 +10,30 @@
 	<title>Portifólio</title>
 </head>
 <!-- Página Principal -->
+
+<style type="text/css">
+ #NameContainer {
+ 	width: 150px;
+
+ }
+</style>
 <body>
 	
 <!-- Animação -->
-		<div id="AnimationBackground"><img id="FirstHalfLogo" src="../Design/HalfLogo1.png"></div>
-		<div id="AnimationMask" style="-webkit-mask-image: url('../Design/Mask.png'); -webkit-mask-repeat: no-repeat;
-	-webkit-mask-size: 136px 427.27px;" class="SecondHalfOff"><img id="SecondHalfLogo" src="../Design/HalfLogo2.png"></div>
 
-		<div id="NamesContainer">
+		<div class="NamesContainer">
+			<div class="AnimationNameMask"></div>
 			<img src="../Design/Name1.png">
-			<br>
+		</div>
+		<div class="NamesContainer">
+			<div class="AnimationNameMask"></div>
 			<img src="../Design/Name2.png">
 		</div>
+
+
+	 	<div id="AnimationBackground"><img id="FirstHalfLogo" src="../Design/HalfLogo1.png"></div>
+		<div id="AnimationLogoMask" style="-webkit-mask-image: url('../Design/Mask.png'); -webkit-mask-repeat: no-repeat;
+	-webkit-mask-size: 136px 427.27px;" class="SecondHalfOff"><img id="SecondHalfLogo" src="../Design/HalfLogo2.png"></div>
 
 
 

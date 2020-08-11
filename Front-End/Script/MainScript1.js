@@ -21,14 +21,20 @@ $(document).ready(function(){
 
 
 function Animation () {
-	var FirstContainer = $('#AnimationBackground');
-	var SecondContainer = $('#AnimationMask');
-	var FirstImage = $('#FirstHalfLogo');
-	var SecondImage = $('#SecondHalfLogo');
-	FirstContainer.attr('class', 'FirstHalfStart');
-	SecondContainer.attr('class', 'SecondHalfStart');
-		SecondImage.attr('style', 'margin-top: 110%;');
-
+	var FirstContainerAnimation = $('#AnimationBackground'),
+		SecondContainerAnimation = $('#AnimationLogoMask'),
+		SecondImageAnimation = $('#SecondHalfLogo'),
+		NamesAnimation = $('.NamesContainer img'),
+		NamesMask = $('.AnimationNameMask');
+	FirstContainerAnimation.attr('class', 'FirstHalfStart');
+	SecondContainerAnimation.attr('class', 'SecondHalfStart');
+	SecondImageAnimation.attr('style', 'margin-top: 110%;');
+	setTimeout(function(){
+		NamesAnimation.attr('style', 'margin-left: 72%;');
+		setTimeout(function(){
+			NamesMask.attr('style', 'margin-left: -150%');
+		}, 500);
+	}, 2000);
 	}
 
 function ThemeSwitch (clickTheme) {
