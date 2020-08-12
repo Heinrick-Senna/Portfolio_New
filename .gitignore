@@ -1,3 +1,4 @@
 *.xlsx
-Teste1.sublime-project
-Teste1.sublime-workspace
+
+*.sublime-project
+*.sublime-workspace
