@@ -21,6 +21,8 @@ $(document).ready(function(){
 
 
 function Animation () {
+	//Animação de Início//
+
 	var FirstContainerAnimation = $('#AnimationBackground'),
 		SecondContainerAnimation = $('#AnimationLogoMask'),
 		SecondImageAnimation = $('#SecondHalfLogo'),
@@ -35,7 +37,23 @@ function Animation () {
 			NamesMask.attr('style', 'margin-left: -150%');
 		}, 500);
 	}, 2000);
-	}
+
+	// Fechando Animação//
+	setTimeout(function(){
+			NamesMask.attr('style', 'margin-left: -100%');
+		setTimeout(function(){
+			NamesAnimation.attr('style', 'margin-left: -100%;');
+	}, 500);
+		setTimeout(function(){
+		FirstContainerAnimation.attr('class', '');
+		SecondContainerAnimation.attr('class', 'SecondHalfOff');
+		SecondImageAnimation.removeAttr('style');	
+		}, 1000);
+	}, 4000);
+
+
+
+}
 
 function ThemeSwitch (clickTheme) {
 	var themesIco = document.getElementById('FloatTheme').getElementsByTagName('li');
