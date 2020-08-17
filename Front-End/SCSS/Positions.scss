@@ -1,5 +1,5 @@
 @mixin mainAnimation {
-	transition: all 300ms ease-in;
+	transition: all 2s ease-in;
 }
 
 @mixin mainAlign {
@@ -23,64 +23,6 @@
  	font: normal 1.2em Verdana;
 	@include mainAlign;
  }
-
-/* Animação */
- #FirstHalfLogo, #SecondHalfLogo {
- 	width: 136px;
- 	transition: all 1s ease-out;
- 	user-select: none;
- }
-
- #AnimationLogoMask, #AnimationBackground {
- 	@include mainAlign;
- 	transition: all 2s ease;
- 	user-select: none;
- }
-
- #AnimationLogoMask {
- 	width:136px;
- 	height: 287px;
- }
-
- .FirstHalfStart {
- 	margin-top: -12%;
- }
-
- .SecondHalfOff {
- 	margin-top: 72px;
- }
-
- .SecondHalfStart {
- 	margin-top: -6.75%;
- }
-
- .NamesContainer {
- 	@include mainAlign;
- }
-
- .NamesContainer:first-of-type {
- 	margin-top: -10%;
- 	margin-left: 1%;
- }
-
- .NamesContainer img {
- 	height: 60px;
- 	margin-left: -100%;
- 	transition: .8s;
- }
- 
- .AnimationNameMask {
- 	position: absolute;
- 	width: 200%;
- 	margin-left: -100%;
- 	height: 100%;
-	background: linear-gradient(to right, 
- 		rgba(255,255,255,1) 0%,
- 		rgba(255,255,255,1) 46%,
- 		rgba(255,255,255,0.9) 90%,
- 		rgba(125,185,232,0) 100%);
-	transition: .8s;
-}
 
 /* Cabeçalho */
  #HeadTittle {
@@ -177,7 +119,32 @@
  	@include mainAnimation;
  }
  
-/* Esquemas De Classe, Menu */
+/* Esquemas De Classe*/
+@mixin secondAlign {
+	transition: all 1s ease-out; 
+}
+
+ .OffItem {
+ 	display: none;
+ 	@include secondAlign;
+ }
+
+ .HiddenItem {
+ 	display: block;
+ 	visibility: hidden;
+ 	opacity: 0%;
+ 	border-radius: 50%;
+ 	@include secondAlign;
+ }
+
+ .OnItem {
+ 	visibility: visible;
+ 	display: block;
+ 	opacity: 100%;
+ 	border-radius: 0%;
+ 	@include secondAlign;
+ }
+
  .MenuOff {
  	display: none;
  	@include mainAnimation;

@@ -22,12 +22,16 @@ $(document).ready(function(){
 
 function Animation () {
 	//Animação de Início//
-
-	var FirstContainerAnimation = $('#AnimationBackground'),
+  var FirstContainerAnimation = $('#AnimationBackground'),
 		SecondContainerAnimation = $('#AnimationLogoMask'),
 		SecondImageAnimation = $('#SecondHalfLogo'),
 		NamesAnimation = $('.NamesContainer img'),
-		NamesMask = $('.AnimationNameMask');
+		NamesMask = $('.AnimationNameMask'),
+		animationSpace = $('#AnimationSpace'),
+		imageLogo = $('#Logo'),
+		logoContainer = $('#HeadTittle div:first-of-type');
+
+/*
 	FirstContainerAnimation.attr('class', 'FirstHalfStart');
 	SecondContainerAnimation.attr('class', 'SecondHalfStart');
 	SecondImageAnimation.attr('style', 'margin-top: 110%;');
@@ -38,7 +42,7 @@ function Animation () {
 		}, 500);
 	}, 2000);
 
-	// Fechando Animação//
+	//Fechando Animação//
 	setTimeout(function(){
 			NamesMask.attr('style', 'margin-left: -100%');
 		setTimeout(function(){
@@ -50,6 +54,25 @@ function Animation () {
 		SecondImageAnimation.removeAttr('style');	
 		}, 1000);
 	}, 4000);
+*/
+	//Substituindo Animação//
+	setTimeout(function() {
+		
+		setTimeout(function() {
+			var Cover = document.getElementById('BlackScreen');
+			Cover.classList.add('HiddenItem');
+			setTimeout(function() {
+				Cover.classList.remove('HiddenItem');
+				Cover.classList.add('OnItem');
+			}, 100);
+			
+		}, 1000);	
+		animationSpace.remove();
+	}, 1000);
+
+
+
+
 
 
 
