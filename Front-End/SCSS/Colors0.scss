@@ -7,6 +7,23 @@ $secundaryTextColor: white;
 
 /* Colors */
 
+/*
+ body {
+ 	background-color: #2354A6;
+ }
+*/
+ body {
+ 	background-color: #3DE2D4;
+ }
+/* Animação */
+ .AnimationNameMask {
+ 	background: linear-gradient(to right, 
+ 		#3DE2D4 0%,
+ 		#3DE2D4 46%,
+ 		rgba(61, 226, 212,0.85) 90%,
+ 		rgba(0,0,0,.0) 100%);
+ }
+
 /* Tela Inicial */
  #InitialText {
  	color: black;
@@ -17,10 +34,10 @@ $secundaryTextColor: white;
  	 background-color: $mainColor;
  	border-radius: 20px;
  }
+
  #HeadTittle div:first-of-type {
  	background-color: transparent;
  }
- 
 
  #HeadTittle p {
  	font: bold 20px $mainText;

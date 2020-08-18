@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 
 
-function Animation () {
+ function Animation () {
 	//Animação de Início//
   var FirstContainerAnimation = $('#AnimationBackground'),
 		SecondContainerAnimation = $('#AnimationLogoMask'),
@@ -31,7 +31,6 @@ function Animation () {
 		imageLogo = $('#Logo'),
 		logoContainer = $('#HeadTittle div:first-of-type');
 
-/*
 	FirstContainerAnimation.attr('class', 'FirstHalfStart');
 	SecondContainerAnimation.attr('class', 'SecondHalfStart');
 	SecondImageAnimation.attr('style', 'margin-top: 110%;');
@@ -54,28 +53,36 @@ function Animation () {
 		SecondImageAnimation.removeAttr('style');	
 		}, 1000);
 	}, 4000);
-*/
-	//Substituindo Animação//
-	setTimeout(function() {
-		
+
+	AnimationSkip();
+}
+
+
+//Substituindo Animação//	
+function AnimationSkip () {
 		setTimeout(function() {
-			var Cover = document.getElementById('BlackScreen');
-			Cover.classList.add('HiddenItem');
-			setTimeout(function() {
-				Cover.classList.remove('HiddenItem');
-				Cover.classList.add('OnItem');
-			}, 100);
+
+		var animationSpace = $('#AnimationSpace'),
+			Cover = $('#BlackScreen');
+		Cover.attr('style', 'transform-origin: top;transform: scaleY(1);');
+			setTimeout(function(){	
+				animationSpace.remove();
+				$('#NavBarIcon').removeAttr('style');
+				$('#FloatTheme').removeAttr('style');
+				$('hr').removeAttr('style');
+				$('.container').removeAttr('style');
+				
+			}, 510);
+				
+			setTimeout(function(){
+				Cover.attr('style', 'transform-origin: bottom;transform: scaleY(0);');
+				setTimeout(function(){
+					Cover.remove();
+				}, 600);
+			}, 1000);
 			
-		}, 1000);	
-		animationSpace.remove();
-	}, 1000);
 
-
-
-
-
-
-
+	}, 8000);	
 }
 
 function ThemeSwitch (clickTheme) {
