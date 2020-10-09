@@ -10,155 +10,171 @@
 	transform: translate(-50%, -50%);
 }
 
+@font-face {
+  font-family: aAnt;
+  src: url('../../Design/Fonts/aAntaraDistance.ttf');
+}
 
-
-
- body {
- 	@include mainAnimation;
+@font-face {
+	font-family: eupho;
+	src: url('../../Design/Fonts/euphorigenic.ttf');
+}
+ html, body {
+  scroll-behavior: smooth;
+  @include mainAnimation;
  }
 
-
-/* Tela Inicial */
- #InitialText {
- 	font: normal 1.2em Verdana;
-	@include mainAlign;
+// Sections
+ .Block {
+  position: absolute;
+  min-height: 100vh;
+  max-height: 100vh;
+  width: 100vw;
+  transition: transform 500ms ease-in, margin-top 250ms ease-out;
  }
 
-/* Cabeçalho */
- #HeadTittle {
- 	@include mainAnimation;
- 	border-radius: 20px;
+ .BlockSelected {
+  margin-top: 0!important;
  }
 
- @media(max-width: 1024px) {
- 	#HeadTittle br {
- 	display: none;
- 	}
+@for $i from 0 through 6 {
+  .Block:nth-child(#{$i}) {
+    margin-top: 26.5vh * ($i - 2);
+  }
+}
+
+ .Opaque {
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  position: absolute;
  }
 
-  #Logo {
- 	width: 100px;
+// Headder
+ #Logo {
+ 	width: 4.5vw;
  }
 
- /* Seleção de Tema */
+// Theme selection
  #FloatTheme {
- 	text-align: center;
+  text-align: center;
  	position: absolute;
  	cursor: pointer;
- 	margin: 0 0 0 93.7%;
- 	top: 2%;
+ 	right: 1vw;
+ 	top: 2vw;
  }
 
  #FloatTheme li {
  	position: relative;
  	list-style: none;
  	display: inline;
+  margin-left: .5vw;
  }
 
-/* Card de Informações */
- #CardInfo {
- 	border-radius: 20px;
- 	cursor: pointer;
- 	padding: 2%;
+ #FloatTheme svg {
+  width: 1vw;
  }
 
- @media (min-width: 1200px) {
- #CardInfo {
- 	margin-top: 5%;
- 	transform: rotatex(75deg) translatey(-100%) translatez(-100px);
- 	@include mainAnimation;
- }
-  #CardInfo:hover {
- 	margin-top: 0;
- 	box-shadow: 0 0;
- 	@include mainAnimation;
- 	transform: rotatex(0deg);
- }
+ @media(min-width: 1720px) {
+   #HeadTittle p {
+   text-align: right!important;
+  }
  }
 
- @media (max-width: 720){
- #CardInfo {
- 	padding: 2%;
- 	transition: all 500ms ease-out;
- }
- }
-
- #CardInfo p {
- 	text-align: center;
- }
-
- /* Carousel */
- @media (max-width: 1200px){
- 	#MainCarousel {
- 		margin-top: 4%;
- 	}
- }
-
- #MainCarousel:hover {
- 		cursor: pointer;
- }
-
- /* FloatIcon Menu */
- #NavBarIcon {
- 	margin-left: 0.25%;
- 	top: 26%;
- 	position: absolute;
- 	cursor: pointer;
- 	@include mainAnimation;
- } 
-
- #NavBarIcon:hover {
- 	margin-left: 1.25%;
- 	@include mainAnimation;
- }
-
-/* Menu */ 
- #OutMenu {
- 	position: absolute;
- 	top: 40%;
- 	@include mainAnimation;
- }
- 
-/* Esquemas De Classe*/
-@mixin secondAlign {
-	transition: all 1s ease-out; 
+// Neon Word 
+#NeonWord {
+	font: bold 15vw aAnt;
+	color: white;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+ text-shadow: 0 0 5px white, 0 0 10px white;
+ @include mainAnimation;
 }
 
- .OffItem {
- 	display: none;
- 	@include secondAlign;
+#NeonWord ~ p {
+	font: normal 3vw eupho;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 30px #BC1827, 0 0 40px #BC1827, 0 0 50px #BC1827, 0 0 60px #BC1827, 0 0 70px #BC1827;
+  }
+  to {
+    text-shadow: 0 0 10px white, 0 0 10px white, 0 0 40px #F31212, 0 0 50px #F31212, 0 0 60px #F31212, 0 0 70px #F31212, 0 0 80px #F31212;
+  }
+}
+
+// Menu
+#MainMenu {
+ 	position: absolute;
+ 	margin-bottom: 10%;
+ 	top: 30%;
+ 	left: 2%;
+ } 
+
+ #MainMenu ul {
+  width: 100%;
+ 	list-style: none;
+ 	user-select: none;
+ 	outline: none;
  }
 
- .HiddenItem {
- 	display: block;
- 	visibility: hidden;
- 	opacity: 0%;
- 	border-radius: 50%;
- 	@include secondAlign;
+ #MainMenu li {
+ 	padding: 0% 0 0% 0%;
+ 	margin: 0% 0 0% 0%;
+ 	outline: none;
+ 	cursor: pointer;
+  display: list-item;
  }
 
- .OnItem {
+ #MainMenu li span {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+ 	font: bold 1.5vw eupho;
+  margin-left: .5vw;
+  vertical-align: middle;
+  transition: all 250ms ease;
+ }
+
+ .MenuSelected:hover > span {
+  display: none!important;
+ }
+
+ .MenuSelected:hover > svg {
+  width: 2vw!important;
+  margin-left: 0!important;
+  padding-left: 0!important;
+ }
+
+ .MenuSelected:hover {
+  padding-left: 0!important;
+  padding-right: 0!important;
+ }
+
+ #MainMenu svg {
+  width: 2vw;
+  transition: all 250ms ease;
+ }
+
+ #MainMenu li:hover {
+  padding-right: 1vw;
+ }
+
+ #MainMenu li:hover > span {
+  display: inline;
  	visibility: visible;
- 	display: block;
- 	opacity: 100%;
- 	border-radius: 0%;
- 	@include secondAlign;
+  opacity: 1;
  }
 
- .MenuOff {
- 	display: none;
- 	@include mainAnimation;
+ #MainMenu li:hover > svg {
+  width: 4vw;
+ 	margin-left: -1vw;
+  padding-left: .2vw;
+  border-right: none;
  }
 
- .MenuHidden {
- 	display: block;
- 	visibility: hidden;
- 	transition: all 400ms ease-out;
- 	left: -32%;
- }
 
- .MenuOn {
- 	visibility: visible;
- 	transition: all 400ms ease-out;
- 	left: 0;
- }
+

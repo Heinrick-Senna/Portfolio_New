@@ -1,8 +1,9 @@
-$mainColor: #CECECE;
-$secundaryColor: #575757;
+$mainColor: #CD0000;
+$menuColor: #7F0000;
+$secundaryColor: black;
 $mainText: Agency FB;
 $secundaryText: Verdana;
-$mainTextColor: black;
+$mainTextColor: white;
 $secundaryTextColor: white;
 
 /* Colors */
@@ -13,58 +14,68 @@ $secundaryTextColor: white;
  }
 */
  body {
- 	background-color: #3DE2D4;
+ 	
  }
 /* Animação */
  .AnimationNameMask {
  	background: linear-gradient(to right, 
- 		#3DE2D4 0%,
- 		#3DE2D4 46%,
- 		rgba(61, 226, 212,0.85) 90%,
+ 		white 0%,
+ 		white 90%,
  		rgba(0,0,0,.0) 100%);
- }
-
-/* Tela Inicial */
- #InitialText {
- 	color: black;
  }
 
 /* Cabeçalho */
  #HeadTittle {
- 	 background-color: $mainColor;
- 	border-radius: 20px;
- }
-
- #HeadTittle div:first-of-type {
- 	background-color: transparent;
+ 	background-color: $mainColor;
+ 	border-radius: 0px;
+ 	box-shadow: 4px 4px 8px white;
  }
 
  #HeadTittle p {
- 	font: bold 20px $mainText;
+ 	font: bold 1.5vw $mainText;
+ 	color: $mainTextColor;
+ 	text-shadow: 0px 2px 2px black;
  }
 
- hr{
+ hr {
  	background-color: $mainColor;
  }
+
+.Block {
+	background-color: #0B0B0B;
+}
 
 /* Seleção de Tema */
  #FloatTheme {
  	color: $mainTextColor;
  }
 
-/* Card de Informações */
- #CardInfo {
- 	background-color: $secundaryColor;
- 	color: $secundaryTextColor;
- }
-
- @media (min-width: 1200px) {
- #CardInfo {
- 	box-shadow: 0px 20px 60px rgba(0,0,0,0.7);
- }
- }
-
  /* MainMenu */
- #InMenu {
- border: 2px solid black; 	
+ .MenuSelected svg {
+ 	fill: #B4B4B4!important;
+ 	border: none!important;
+ 	transform: scale(.8);
  }
+
+ .MenuSelected:hover {
+ 	border-right: none!important;
+ }
+
+ #MainMenu li span {
+ 	color: white;
+ }
+
+ #MainMenu svg {
+	border-right: dashed 2px $menuColor;
+ 	border-left: dashed 2px $menuColor;
+ 	fill: white;
+ }
+
+ #MainMenu li:hover {
+ 	border-right: dashed 2px $menuColor;
+ }
+
+ #MainMenu li:hover > svg {
+	border-left: dashed 2px $menuColor;
+ }
+
