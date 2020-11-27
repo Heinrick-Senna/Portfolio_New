@@ -1,0 +1,76 @@
+// Menu
+#MainMenu {
+	position     : absolute;
+	margin-bottom: 10%;
+	top          : 15vw;
+	z-index      : 20000;
+	transition   : opacity 250ms ease-in;
+}
+
+#MainMenu ul {
+	width      : 100%;
+	list-style : none;
+	user-select: none;
+	outline    : none;
+}
+
+#MainMenu li {
+	outline: none;
+	display: list-item;
+	cursor : pointer;
+}
+
+#MainMenu li span {
+	display       : none;
+	visibility    : hidden;
+	opacity       : 0;
+	font          : bold 1.5vw eupho;
+	margin-left   : .5vw;
+	vertical-align: middle;
+	transition    : all 250ms ease;
+}
+
+#MainMenu svg {
+	width     : 2vw;
+	transition: all 250ms ease;
+}
+
+#MainMenu li:hover {
+	padding-right: 1vw;
+}
+
+#MainMenu li:hover > span {
+	display   : inline;
+	visibility: visible;
+	opacity   : 1;
+}
+
+#MainMenu li:hover > svg {
+	width       : 4vw;
+	margin-left : -1vw;
+	padding-left: .2vw;
+	border-right: none;
+}
+
+.MenuSelected {
+	cursor: default!important;
+}
+
+.MenuSelected svg {
+	border   : none!important;
+	transform: scale(.8);
+}
+
+.MenuSelected:hover {
+	border-right: none!important;
+}
+
+.MenuSelected:hover > span {
+	display: none!important;
+}
+
+.MenuSelected:hover > svg {
+	width       : 2vw!important;
+	margin-left : 0!important;
+	padding-left: 0!important;
+}

@@ -1,0 +1,75 @@
+$mainColor: #CD0000;
+$menuColor: #7F0000;
+$secundaryColor: black;
+$mainText: Agency FB;
+$secundaryText: Verdana;
+$mainTextColor: white;
+$secundaryTextColor: white;
+
+
+body {
+	background-color: rgb(0,0,0);
+}
+
+// Cabeçalho
+#HeadTittle {
+	background-color: $mainColor;
+	border-radius   : 0px;
+	box-shadow      : 4px 4px 8px white;
+}
+
+#HeadTittle p {
+	font       : bold 1.5vw $mainText;
+	color      : $mainTextColor;
+	text-shadow: 0px 2px 2px black;
+}
+
+hr {
+	background-color: $mainColor;
+}
+
+.Block {
+	background-color: #0B0B0B;
+}
+
+/* Seleção de Tema */
+#FloatTheme {
+	color: $mainTextColor;
+}
+
+#NeonWord {
+ 	color: white;
+}
+
+@-webkit-keyframes glow {
+	from {
+		text-shadow: 0 0 5px white, 0 0 10px white, 0 0 30px #BC1827, 0 0 40px #BC1827, 0 0 50px #BC1827, 0 0 60px #BC1827, 0 0 70px #BC1827;
+	}
+	to {
+		text-shadow: 0 0 10px white, 0 0 10px white, 0 0 40px #F31212, 0 0 50px #F31212, 0 0 60px #F31212, 0 0 70px #F31212, 0 0 80px #F31212;
+	}
+}
+
+// Menu
+.MenuSelected svg {
+	fill: #B4B4B4!important;
+}
+
+ #MainMenu li span {
+ 	color: white;
+ }
+
+ #MainMenu svg {
+	border-right: dashed 2px $menuColor;
+	border-left : dashed 2px $menuColor;
+	fill        : white;
+ }
+
+ #MainMenu li:hover {
+ 	border-right: dashed 2px $menuColor;
+ }
+
+ #MainMenu li:hover > svg {
+	border-left: dashed 2px $menuColor;
+ }
+
