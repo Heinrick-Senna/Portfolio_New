@@ -41,6 +41,6 @@ app.get('/mhfrontend.com.br/', function(req, res) {
 // });
 
 // Erro 404
-app.use((req, res, next) => {
-	res.status(404).render('notfound');
-})
+// app.use((req, res, next) => {
+// 	res.status(404).render('notfound');
+// })

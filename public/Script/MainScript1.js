@@ -1,11 +1,9 @@
 $(document).ready(function(){
 	// Funções de Animação
-	// AnimationIn();
-	// $('#SkipAButton').click(function(){
-	// 	AnimationSkip();
-	// });
-
-	LoadBlocks(localStorage.getItem('Page') || 0);
+	AnimationIn();
+	$('#SkipAButton').click(function(){
+		AnimationSkip();
+	});
 	
 	// Troca  de Temas
 	$('#FloatTheme li').click(function (){
@@ -136,6 +134,7 @@ function PageSwitch (num) {
 	 				$('#OffSet').css('display', 'none');
 	 				$('#OffSet').removeAttr('class');
 	 				$('#MainMenu').removeAttr('style');
+	 				$('body').css('overflow', 'auto');
 	 			}, 750);
 	 			
 	 		}, 550);

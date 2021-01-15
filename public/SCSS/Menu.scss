@@ -1,23 +1,30 @@
 // Menu
 #MainMenu {
 	position     : absolute;
-	margin-bottom: 10%;
-	top          : 15vw;
+	top          : 12vw;
+	left: 2vw;
 	z-index      : 20000;
 	transition   : opacity 250ms ease-in;
+	padding: 0!important;
+	margin: 0!important;
 }
 
 #MainMenu ul {
-	width      : 100%;
+	max-width  : 100vw;
 	list-style : none;
 	user-select: none;
 	outline    : none;
+	padding: 0!important;
+	margin: 0!important;
+	line-height: .1;
 }
 
 #MainMenu li {
 	outline: none;
 	display: list-item;
 	cursor : pointer;
+	padding: 0!important;
+	margin: 0!important;
 }
 
 #MainMenu li span {
@@ -36,6 +43,8 @@
 }
 
 #MainMenu li:hover {
+	padding-top: -1vw;
+	padding-bottom: 0;
 	padding-right: 1vw;
 }
 
@@ -73,4 +82,16 @@
 	width       : 2vw!important;
 	margin-left : 0!important;
 	padding-left: 0!important;
+}
+
+@media(max-width: 970px) {
+	#MainMenu li svg {
+		border: none;
+	}
+	#MainMenu li:hover {
+		border:none;
+		svg {
+			border: none;
+		}
+	}
 }

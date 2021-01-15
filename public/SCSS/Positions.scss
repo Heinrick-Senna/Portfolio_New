@@ -20,12 +20,16 @@
 	src        : url('../../Design/Fonts/euphorigenic.ttf');
 }
 
+body, html {
+	overflow-x: hidden; 
+}
+
 // Sections
 .Block {
 	position  : absolute;
 	min-height: 100vh;
-	max-height: 100vh;
-	width     : 100vw;
+	width : 100vw;
+	width: 100vw!important;
 	transition: transform 750ms ease, margin-top 500ms ease-in;
 }
 
@@ -84,4 +88,99 @@
 	-moz-animation   : glow 1s ease-in-out infinite alternate;
 	animation        : glow 1s ease-in-out infinite alternate;
 	text-shadow      : 0 0 5px white, 0 0 10px white;
+}
+
+#ButtonPlay {
+	margin          : auto;
+	margin-top      : 15vh;
+	font            : bolder 350% Agency FB;
+	color           : white;
+	cursor          : pointer;
+	transition      : all 230ms ease;
+	user-select     : none;
+	text-align      : center;
+	span {
+		transition      : all 230ms ease;
+	}
+	span:hover {
+		text-shadow: 1px 1px 1px #919191,
+		1px 2px 1px #919191,
+		1px 3px 1px #919191,
+		1px 4px 1px #919191,
+		1px 5px 1px #919191,
+		1px 6px 1px #919191,
+		1px 7px 1px #919191,
+		1px 8px 1px #919191,
+		1px 9px 1px #919191,
+		1px 10px 1px #919191;
+	}
+}
+
+
+//Social 
+#Social {
+	#SocialMe {
+		text-align: left;
+		animation : float linear 1.5s infinite alternate;
+		img {
+			width        : 16vw;
+			border-radius: 1vw;
+		}
+		#SocialTittle {
+			text-align: center;
+			h1 {
+				font: normal 4vw Agency FB;
+				color: white;
+			}
+			p {
+				font: normal 2vw Agency FB;
+				color: white;
+				text-shadow: 0px .5vw 1vw black
+			}
+		}
+	}
+
+	#SocialMidia {
+		span:hover > a img  {
+			opacity: .6;
+			filter : blur(.6vw);
+			@include mainAnimation;
+		}
+		span {
+			img {
+				width       : 5vw;
+				cursor      : pointer;
+				margin-left : 4vw;
+				text-align  : center;
+				border-color: white;
+				@include mainAnimation;
+			}
+			a:nth-child(1) {
+				img {
+					margin-left: 0!important;
+				}
+			}
+		}
+		a {
+			&:focus {
+				outline: none;
+			}
+			img:hover, &:focus img {
+				transform    : scale(1.35);
+				opacity      : 1!important;
+				filter       : blur(0px)!important;
+				padding-bottom: .5vw;
+				border-bottom: .1vw inset white;
+			}
+		}
+	}
+
+	#SocialMidiaT {
+		font: normal 2vw Agency FB;
+		color: white;
+	}
+}
+
+@media(max-width: 970px) {
+
 }
