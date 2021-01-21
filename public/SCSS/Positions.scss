@@ -181,6 +181,43 @@ body, html {
 	}
 }
 
+.KnowledgeList {
+	display: grid;
+	grid-template-columns: 47.5% 47.5%;
+	grid-column-gap: 5%;
+	grid-row-gap: 6vh;
+	text-align: left;
+	.KnowledgeItens {
+		transform            : rotateX(180deg);
+		backface-visibility  : hidden;
+		display              : grid;
+		grid-template-columns: 55% 45%;
+		background           : black;
+		color                : white;
+		padding-left         : 2vw; 
+		list-style           : none;
+		font                 : normal 2.2vw Agency FB;
+		transition           : transform 700ms, font-size 50ms, box-shadow 500ms;
+		user-select          : none;
+		span {
+			margin-top: 1vw;
+		}
+		.KnowledgeLevel {
+			transform       : scaleX(0);
+			background-color: rgba(255,255,255,.1);
+			transition      : transform 400ms, font-size 50ms, box-shadow 100ms;
+			padding         : 1vw;
+			padding-left    : 2vw;
+			transform-origin: left;
+			span {
+				opacity: 0;
+				transition: opacity 200ms;
+			}
+		}
+	}
+}
+
+
 @media(max-width: 970px) {
 
 }

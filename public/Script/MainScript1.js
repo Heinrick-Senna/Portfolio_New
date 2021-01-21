@@ -1,10 +1,13 @@
 $(document).ready(function(){
 	// Funções de Animação
-	AnimationIn();
-	$('#SkipAButton').click(function(){
-		AnimationSkip();
-	});
+	// AnimationIn();
+	// $('#SkipAButton').click(function(){
+	// 	AnimationSkip();
+	// });
+	LoadBlocks(localStorage.getItem('Page') || 0);
 	
+	AnimationBanner();
+
 	// Troca  de Temas
 	$('#FloatTheme li').click(function (){
 		var actualTheme = $('#ThemeLink').attr('href').replace(/[^0-9]/g,''), clickTheme = $(this).attr('id').replace(/[^0-9]/g,'');
@@ -26,6 +29,82 @@ $(document).ready(function(){
 	});
 });
 
+
+function AnimationBanner () {
+	var pItem = $('.bannerText'),
+		ptexts = [];
+	for (var i = pItem.length - 1; i >= 0; i--) {
+			ptexts.unshift(pItem[i].innerHTML);
+			pItem[i].innerHTML = '';
+	}
+
+	AnimationBanner2(ptexts, pItem)
+}
+
+
+function AnimationBanner2 (ptexts, pItem) {
+
+	setTimeout(function(){
+		if (AnimationText) {
+			pItem[0].innerHTML = '';
+			AnimationText (ptexts[0], pItem[0], 115);
+		}
+	}, 10);
+
+	setTimeout(function(){
+		if (AnimationText) {
+			pItem[0].innerHTML = '';
+			AnimationText (ptexts[1], pItem[0], 115);
+		}
+
+	}, ptexts[0].length * 115 + 115);
+	
+	setTimeout(function(){
+		if (AnimationText) {
+			pItem[0].innerHTML = '';
+			AnimationText (ptexts[2], pItem[0], 115);
+		}
+	}, (ptexts[0].length * 115) + (ptexts[1].length * 115) + 125);
+
+	setTimeout(function(){
+		AnimationBanner2(ptexts, pItem);
+	}, (ptexts[0].length * 115) + (ptexts[1].length * 115) + (ptexts[2].length * 115) + 125);
+}
+
+
+// Animação Conhecimentos
+function AnimationKnowledge () {
+	var itemspan = $('.KnowText');
+	$('.KnowledgeItens').css('transform', 'none');
+	setTimeout(function(){
+		for (var i = itemspan.length - 1; i >= 0; i--) {
+			var textcache = itemspan[i].innerHTML;
+			var timertext = timertext || 1;
+			if (textcache.length > timertext) {
+				timertext = textcache.length;
+			}
+			itemspan[i].innerHTML = '';
+			AnimationText (textcache, itemspan[i], 115);
+		}
+		setTimeout(function(){
+			$('.KnowledgeLevel').css('transform', 'scaleX(1)');
+			setTimeout(function(){
+				$('.KnowledgeLevel span').css('opacity', '1');
+			}, 400);
+
+		}, timertext * 115 + 115);
+	}, 200);
+}
+
+function AnimationText (text, element, speed) {
+	// Função que escreve textos
+	var i = 0;
+		setInterval(function() {
+		if (i < text.length) {
+			element.append(text.charAt(i));
+			i++;
+		}}, speed);
+}
 
 // Animação de Início//
 function AnimationIn () {

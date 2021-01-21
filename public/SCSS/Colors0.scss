@@ -5,6 +5,7 @@ $mainText: Agency FB;
 $secundaryText: Verdana;
 $mainTextColor: white;
 $secundaryTextColor: white;
+$test: #07D5D7;
 
 
 body {
@@ -55,21 +56,35 @@ hr {
 	fill: #B4B4B4!important;
 }
 
- #MainMenu li span {
- 	color: white;
- }
+#MainMenu li span {
+	color: white;
+}
 
- #MainMenu svg {
+#MainMenu svg {
 	border-right: dashed 2px $menuColor;
 	border-left : dashed 2px $menuColor;
 	fill        : white;
- }
+}
 
- #MainMenu li:hover {
- 	border-right: dashed 2px $menuColor;
- }
+#MainMenu li:hover {
+	border-right: dashed 2px $menuColor;
+}
 
- #MainMenu li:hover > svg {
+#MainMenu li:hover > svg {
 	border-left: dashed 2px $menuColor;
- }
+}
+
+.KnowledgeItens {
+	border               : inset .05vw $mainColor;
+	box-shadow: 1px 1px 1px  $mainColor,
+	1px 2px 1px $mainColor,
+	1px 3px 1px $mainColor;
+	.KnowledgeLevel {
+		border-left: dashed .05vw white;
+	}
+	&:hover {
+		box-shadow: none!important;
+	}
+}
+
 
