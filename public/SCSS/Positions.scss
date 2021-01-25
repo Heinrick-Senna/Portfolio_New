@@ -20,7 +20,7 @@
 	src        : url('../../Design/Fonts/euphorigenic.ttf');
 }
 
-body, html {
+body {
 	overflow-x: hidden; 
 }
 
@@ -129,12 +129,12 @@ body, html {
 		#SocialTittle {
 			text-align: center;
 			h1 {
-				font: normal 4vw Agency FB;
+				font : normal 4vw Agency FB;
 				color: white;
 			}
 			p {
-				font: normal 2vw Agency FB;
-				color: white;
+				font       : normal 2vw Agency FB;
+				color      : white;
 				text-shadow: 0px .5vw 1vw black
 			}
 		}
@@ -166,27 +166,27 @@ body, html {
 				outline: none;
 			}
 			img:hover, &:focus img {
-				transform    : scale(1.35);
-				opacity      : 1!important;
-				filter       : blur(0px)!important;
+				transform     : scale(1.35);
+				opacity       : 1!important;
+				filter        : blur(0px)!important;
 				padding-bottom: .5vw;
-				border-bottom: .1vw inset white;
+				border-bottom : .1vw inset white;
 			}
 		}
 	}
 
 	#SocialMidiaT {
-		font: normal 2vw Agency FB;
+		font : normal 2vw Agency FB;
 		color: white;
 	}
 }
 
 .KnowledgeList {
-	display: grid;
+	display              : grid;
 	grid-template-columns: 47.5% 47.5%;
-	grid-column-gap: 5%;
-	grid-row-gap: 6vh;
-	text-align: left;
+	grid-column-gap      : 5%;
+	grid-row-gap         : 6vh;
+	text-align           : left;
 	.KnowledgeItens {
 		transform            : rotateX(180deg);
 		backface-visibility  : hidden;
@@ -210,7 +210,7 @@ body, html {
 			padding-left    : 2vw;
 			transform-origin: left;
 			span {
-				opacity: 0;
+				opacity   : 0;
 				transition: opacity 200ms;
 			}
 		}
