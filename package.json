@@ -21,6 +21,7 @@
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "mongoose": "^5.10.15",
+    "mquery": ">=3.2.3",
     "mustache": "^4.0.1",
     "nodemon": "^2.0.6",
     "save": "^2.4.0"
