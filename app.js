@@ -2,16 +2,19 @@ const express = require('express');
 const app = require('./config/express')();
 const session = require('express-session');
 const engines = require('consolidate');
-// require('./config/database');
+require("dotenv-safe").config();
 
 
 // Config
 	// Sessão
 		app.use(session({
-	        secret: 'MarceloHR',
+	        secret: process.env.AUTH ,
 	        resave: true,
 	        saveUninitialized: true
    		 }));
+
+
+
 
 
 
@@ -31,14 +34,9 @@ app.listen(app.get('port'), () => {
    
 
 // Primeiro Diretório
-app.get('/mhfrontend.com.br/', function(req, res) {
+app.get('/marceloheinrick.com.br/', function(req, res) {
 	res.render('Home');
 });
-
-// Outros diretórios
-// app.get('/mhfrontend.com.br/', function(req, res) {
-	
-// });
 
 // Erro 404
 // app.use((req, res, next) => {

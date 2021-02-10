@@ -1,13 +1,33 @@
 window.onload = function () {
 	// Funções de Animação
-	AnimationIn();
-	document.getElementById('SkipAButton').onclick = function () {
-		AnimationSkip();
-	};
+	// AnimationIn();
+	// document.getElementById('SkipAButton').onclick = function () {
+	// 	AnimationSkip();
+	// };
 
-	//Carregar Páginas
-	// LoadBlocks(localStorage.getItem('Page') || 0);
-	BannerInfo();	
+	// Carregar Páginas
+	LoadBlocks(localStorage.getItem('Page') || 0);
+	BannerInfo();
+	setTimeout(function(){
+		AnimationKnowledge();
+	}, 200);
+
+
+
+	var arrowSocial = document.querySelector('.SocialText img'),
+		textSocial = document.querySelector('.SocialText p'),
+		arrowPot = document.querySelector('.SocialTextImg');
+	arrowSocial.onclick = function (){
+		if (textSocial.style.transform != 'none') {
+			textSocial.style.transform = 'none';
+			textSocial.style.height = '19vh';
+		} else {
+			textSocial.style.transform = 'scaleY(0)';
+			textSocial.style.height = '0';
+		}
+		arrowPot.style.transform = 'rotate(' + (parseInt(arrowPot.getAttribute('style').replace(/[^0-9]/g,''))+180) + 'deg)';
+
+	}
 
 
 	// Troca de Páginas
@@ -220,45 +240,48 @@ function AnimationText (text, element, speed) {
 function BannerInfo () {
 	var ptexts = ['Esse é o meu portfolio Front-End.', 'Seja Bem-Vindo!', 'Sinta-se a vontade para navegar.'],
 		element = document.querySelector('.bannerText');
-
+	var i1 = 0, i2 = 0, i3 = 0;
 		element.innerHTML = '';
 		AnimationText(ptexts[0], element, 115);
 
 		var secondText = setInterval(function() {
-			if (element.innerHTML == ptexts[0]) {
+			if (element.innerHTML == ptexts[0] && i1 == 0) {
+				i1++;
 				setTimeout(function(){
 					element.innerHTML = '';
 					AnimationText(ptexts[1], element, 115);
 					clearInterval(secondText);
 				}, 115);
 			}
-		}, 885);
+		}, 1000);
 
 		var thirdText = setInterval(function() {
-			if (element.innerHTML == ptexts[1]) {
+			if (element.innerHTML == ptexts[1] && i2 == 0) {
+				i2++;
 				setTimeout(function(){
 					element.innerHTML = '';
 					AnimationText(ptexts[2], element, 115);
 					clearInterval(thirdText);
 				}, 115);
 			}
-		}, 885);
+		}, 1000);
 
 		var fourthText = setInterval(function() {
-			if (element.innerHTML == ptexts[2]) {
+			if (element.innerHTML == ptexts[2] && i3 == 0) {
+				i3++;
 				setTimeout(function(){
 					BannerInfo();
 					clearInterval(fourthText);
 				}, 115);
 			}
-		}, 885);
+		}, 1000);
 }
 
 // Animação Aba Conhecimentos
 function AnimationKnowledge () {
 	var itemspan = document.querySelectorAll('.KnowText');
 	document.querySelectorAll('.KnowledgeItens').forEach(I => {
-		I.style.transform = 'none';
+		I.style.transform = 'rotateX(0deg)';
 	});
 	setTimeout(function(){
 		itemspan.forEach(I => {

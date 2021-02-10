@@ -1,13 +1,6 @@
-@mixin mainAnimation {
-	transition: all 300ms ease-in;
-}
+@font-face {
+	font-family: AFB;
 
-@mixin mainAlign {
-	position    : absolute;
-	top         : 50%;
-	left        : 50%;
-	margin-right: -50%;
-	transform   : translate(-50%, -50%);
 }
 
 @font-face {
@@ -28,8 +21,8 @@ body {
 .Block {
 	position  : absolute;
 	min-height: 100vh;
-	width : 100vw;
-	width: 100vw!important;
+	width     : 100vw;
+	width     : 100vw!important;
 	transition: transform 750ms ease, margin-top 500ms ease-in;
 }
 
@@ -87,14 +80,12 @@ body {
 	-webkit-animation: glow 1s ease-in-out infinite alternate;
 	-moz-animation   : glow 1s ease-in-out infinite alternate;
 	animation        : glow 1s ease-in-out infinite alternate;
-	text-shadow      : 0 0 5px white, 0 0 10px white;
 }
 
 #ButtonPlay {
 	margin          : auto;
 	margin-top      : 15vh;
 	font            : bolder 350% Agency FB;
-	color           : white;
 	cursor          : pointer;
 	transition      : all 230ms ease;
 	user-select     : none;
@@ -120,31 +111,51 @@ body {
 //Social 
 #Social {
 	#SocialMe {
-		text-align: left;
-		animation : float linear 1.5s infinite alternate;
+		font-family: Agency FB;
+		animation  : float linear 1.5s infinite alternate;
 		img {
 			width        : 16vw;
 			border-radius: 1vw;
 		}
 		#SocialTittle {
-			text-align: center;
+			text-align : center;
 			h1 {
-				font : normal 4vw Agency FB;
-				color: white;
+				font-size: 4vw;
 			}
 			p {
-				font       : normal 2vw Agency FB;
-				color      : white;
-				text-shadow: 0px .5vw 1vw black
+				font-size  : 2vw;
+				text-align : center;
 			}
+		}
+		.SocialText {
+			user-select: none;
+			div p {
+				font-size       : 2vw;
+				transform-origin: top;
+				transform       : scaleY(0);
+				height          : 0;
+				text-align      : justify;
+				transition      : transform 300ms ease-out, height 300ms ease-out;
+			}
+			img {
+				transform: rotateZ(90deg);
+				max-width: 2vw;
+			}
+		}
+		.SocialTextImg {
+			max-height: 19vh;
+			width     : 5%;
+			text-align: center;
+			transition: transform .7s;
+			cursor    : pointer;
 		}
 	}
 
 	#SocialMidia {
 		span:hover > a img  {
-			opacity: .6;
-			filter : blur(.6vw);
-			@include mainAnimation;
+			opacity   : .6;
+			filter    : blur(.6vw);
+			transition: all 200ms;
 		}
 		span {
 			img {
@@ -152,8 +163,7 @@ body {
 				cursor      : pointer;
 				margin-left : 4vw;
 				text-align  : center;
-				border-color: white;
-				@include mainAnimation;
+				transition  : all 200ms;
 			}
 			a:nth-child(1) {
 				img {
@@ -170,14 +180,18 @@ body {
 				opacity       : 1!important;
 				filter        : blur(0px)!important;
 				padding-bottom: .5vw;
-				border-bottom : .1vw inset white;
 			}
 		}
 	}
 
 	#SocialMidiaT {
 		font : normal 2vw Agency FB;
-		color: white;
+	}
+}
+
+#Knowledge {
+	.Tittle {
+		font : normal 4vw Agency FB;
 	}
 }
 
@@ -192,8 +206,6 @@ body {
 		backface-visibility  : hidden;
 		display              : grid;
 		grid-template-columns: 55% 45%;
-		background           : black;
-		color                : white;
 		padding-left         : 2vw; 
 		list-style           : none;
 		font                 : normal 2.2vw Agency FB;
@@ -204,7 +216,6 @@ body {
 		}
 		.KnowledgeLevel {
 			transform       : scaleX(0);
-			background-color: rgba(255,255,255,.1);
 			transition      : transform 400ms, font-size 50ms, box-shadow 100ms;
 			padding         : 1vw;
 			padding-left    : 2vw;
@@ -219,5 +230,7 @@ body {
 
 
 @media(max-width: 970px) {
-
+	.Block {
+		height: 200vh;
+	}
 }

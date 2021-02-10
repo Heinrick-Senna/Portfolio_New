@@ -1,8 +1,8 @@
-$backgroundMain: #0B0B0B;
-$mainColor: #CD0000;
+$backgroundMain: #CECECE;
+$mainColor: #0D05AD;
 $menuColor: #7F0000;
-$b: black;
-$w: white;
+$b: white;
+$w: black;
 
 body {
 	background: $b;
@@ -18,8 +18,8 @@ body {
 	box-shadow      : .2vw .2vw .4vw $w;
 	p {
 		font       : bold 1.5vw Agency FB;
-		color      : $w;
-		text-shadow: 0 .1vw .1vw $b;
+		color      : $b;
+		// text-shadow: 0 .1vw .1vw $b;
 	}
 }
 
@@ -29,7 +29,7 @@ hr {
 
 #FloatTheme, #NeonWord {
 	color: $w;
-	text-shadow      : 0 0 5px white, 0 0 10px white;
+	text-shadow: 0 0 5px $w, 0 0 10px $w;
 }
 
 #ButtonPlay {
