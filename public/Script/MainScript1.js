@@ -1,12 +1,11 @@
 window.onload = function () {
 	// Funções de Animação
-	// AnimationIn();
-	// document.getElementById('SkipAButton').onclick = function () {
-	// 	AnimationSkip();
-	// };
+	AnimationIn();
+	document.getElementById('SkipAButton').onclick = function () {
+		AnimationSkip();
+	};
 
-	// Carregar Páginas
-	LoadBlocks(localStorage.getItem('Page') || 0);
+
 	BannerInfo();
 	setTimeout(function(){
 		AnimationKnowledge();
