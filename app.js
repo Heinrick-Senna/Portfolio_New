@@ -28,13 +28,13 @@ app.set('view engine', 'html');
 
 // iniciando Servidor
 app.listen(app.get('port'), () => {
-	console.log('Servidor rodando na porta 3001...');
+	
 });
 
    
 
 // Primeiro Diretório
-app.get('/marceloheinrick.com.br/', function(req, res) {
+app.get('/', function(req, res) {
 	res.render('Home');
 });
 

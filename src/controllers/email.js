@@ -14,12 +14,12 @@ let emailController = {};
 
 emailController.newEmail = (req, res) => {
 	transporter.sendMail({
-	from: 'Marcelo Heinrick' + process.env.AUTH,
-	to: 'Marcelohz198@hotmail.com',
-	subject: req.body.name + ' | ' + req.body.email + ', '+ req.body.tittle,
-	text: req.body.text 
+	from: req.body.name +' '+ process.env.AUTH,
+	to: process.env.TO,
+	subject: req.body.email,
+	text: req.body.text
 	}).then(message => {
-		res.render('Home');
+		res.redirect('/');
 	}).catch(error => {
 		res.send(error);
 	})

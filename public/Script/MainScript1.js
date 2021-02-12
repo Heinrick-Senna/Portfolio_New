@@ -1,9 +1,10 @@
 window.onload = function () {
 	// Funções de Animação
-	AnimationIn();
-	document.getElementById('SkipAButton').onclick = function () {
-		AnimationSkip();
-	};
+	// AnimationIn();
+	// document.getElementById('SkipAButton').onclick = function () {
+	// 	AnimationSkip();
+	// };
+	LoadBlocks(localStorage.getItem('Page') || 0);
 
 
 	BannerInfo();
@@ -86,9 +87,8 @@ function PageSwitch (num) {
 		}
 
 		for (var i = allBlocks.length -1; i >= 0; i--) {
-			allBlocks[i].style.marginTop = ((vHeight * 26.5) * (-offsetTop + i)) + 'px';
-			var randomC = Math.floor(Math.random()*16777215).toString(16), randomC2 = Math.floor(Math.random()*16777215).toString(16);	
-			allBlocks[i].style.boxShadow = '0px 0px 0px .5vw #' + randomC + ', -10vw 0px 10vw -5vw #' + randomC2;
+			allBlocks[i].style.marginTop = ((vHeight * 27.5) * (-offsetTop + i)) + 'px';
+			allBlocks[i].style.boxShadow = '0 0 0 .4vw white';
 		}
 
 		allBlocks.forEach(b => {
@@ -105,7 +105,7 @@ function PageSwitch (num) {
 		setTimeout(function(){
 			document.querySelector('.BlockOver').classList.remove('BlockOver');
 			for (var i = allBlocks.length - 1; i >= 0; i--) {
-				allBlocks[i].style.marginTop = ((vHeight * 26.5) * (-num + i)) + 'px';
+				allBlocks[i].style.marginTop = ((vHeight * 27.5) * (-num + i)) + 'px';
 			}
 
 			setTimeout(function(){
