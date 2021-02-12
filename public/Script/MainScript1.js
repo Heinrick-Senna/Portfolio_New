@@ -1,16 +1,11 @@
 window.onload = function () {
 	// Funções de Animação
-	// AnimationIn();
-	// document.getElementById('SkipAButton').onclick = function () {
-	// 	AnimationSkip();
-	// };
-	LoadBlocks(localStorage.getItem('Page') || 0);
-
+	AnimationIn();
+	document.getElementById('SkipAButton').onclick = function () {
+		AnimationSkip();
+	};
 
 	BannerInfo();
-	setTimeout(function(){
-		AnimationKnowledge();
-	}, 200);
 
 
 
@@ -67,6 +62,11 @@ function LoadBlocks (num) {
 	Block.classList.add('BlockSelected', 'BlockOver');
 
 	document.querySelectorAll('#MainMenu li')[num].classList.add('MenuSelected');
+	if (num == 2) {
+		setTimeout(function(){
+			AnimationKnowledge(0);
+		}, 200);	
+	}
 }
 
 // Troca Páginas
@@ -112,6 +112,13 @@ function PageSwitch (num) {
 
 				Block.classList.add('BlockOver', 'BlockSelected');
 				Block.style.transform = 'scale(1)';
+				if (num == 2) {
+					setTimeout(function(){
+						AnimationKnowledge(0);
+					}, 1000) 
+				} else {
+					AnimationKnowledge(1);
+				}
 				
 
 				setTimeout(function(){
@@ -277,26 +284,32 @@ function BannerInfo () {
 }
 
 // Animação Aba Conhecimentos
-function AnimationKnowledge () {
+function AnimationKnowledge (valueS) {
 	var itemspan = document.querySelectorAll('.KnowText');
-	document.querySelectorAll('.KnowledgeItens').forEach(I => {
-		I.style.transform = 'rotateX(0deg)';
-	});
-	setTimeout(function(){
-		itemspan.forEach(I => {
-			var i = I.innerHTML;
-			I.innerHTML = '';
-			AnimationText(i, I, 175);
-
-			setTimeout(function(){
-				I.nextElementSibling.style.transform = 'scaleX(1)';
+	if (valueS == 0) {
+		document.querySelectorAll('.KnowledgeItens').forEach(I => {
+			I.style.transform = 'rotateX(0deg)';
+		});
+		setTimeout(function(){
+			itemspan.forEach(I => {
+				var i = I.innerHTML;
+				I.innerHTML = '';
+				AnimationText(i, I, 175);
 
 				setTimeout(function(){
-					I.nextElementSibling.getElementsByTagName('span')[0].style.opacity = '1';
-				}, 400);
+					I.nextElementSibling.style.transform = 'scaleX(1)';
 
-			}, i.length * 175 + 175);
+					setTimeout(function(){
+						I.nextElementSibling.getElementsByTagName('span')[0].style.opacity = '1';
+					}, 400);
+
+				}, i.length * 175 + 175);
+			});
+			
+		}, 200);
+	} else {
+		document.querySelectorAll('.KnowledgeItens').forEach(I => {
+			I.style.transform = 'rotateX(180deg)';
 		});
-		
-	}, 200);
+	}
 }
