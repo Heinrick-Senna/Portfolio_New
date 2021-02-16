@@ -85,13 +85,37 @@
 }
 
 @media(max-width: 970px) {
-	#MainMenu li svg {
-		border: none;
-	}
-	#MainMenu li:hover {
-		border:none;
-		svg {
-			border: none;
+	#MainMenu {
+		top: 4vw;
+		.MenuSelected {
+		 	&:hover svg {
+		 		width: 4vw!important;
+		 	}
+			span {
+				display: none!important;
+			}
 		}
+		li {
+			&:hover {
+				border: none;
+				svg {
+					width       : 4vw;
+					margin-left : 0;
+					padding-left: 0;
+					border: none;
+				}
+			}
+			span {
+				font          : normal 2.5vw Agency FB;
+				display   : inline;
+				visibility: visible;
+				opacity   : 1;
+			}
+			svg {
+				width: 4vw;
+				border: none;
+			}
+		} 
+
 	}
 }

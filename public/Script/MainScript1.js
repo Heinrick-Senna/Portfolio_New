@@ -1,15 +1,16 @@
 window.onload = function () {
 	// Funções de Animação
-	AnimationIn();
-	document.getElementById('SkipAButton').onclick = function () {
-		AnimationSkip();
-	};
+	// AnimationIn();
+	// document.getElementById('SkipAButton').onclick = function () {
+	// 	AnimationSkip();
+	// };
+	LoadBlocks(localStorage.getItem('Page') || 0);
 
 	BannerInfo();
 
 
 
-	var arrowSocial = document.querySelector('.SocialText img'),
+	var arrowSocial = document.querySelector('.SocialText svg'),
 		textSocial = document.querySelector('.SocialText p'),
 		arrowPot = document.querySelector('.SocialTextImg');
 	arrowSocial.onclick = function (){
@@ -244,7 +245,7 @@ function AnimationText (text, element, speed) {
 
 // Animações Aba Home
 function BannerInfo () {
-	var ptexts = ['Esse é o meu portfolio Front-End.', 'Seja Bem-Vindo!', 'Sinta-se a vontade para navegar.'],
+	var ptexts = ['Esse é o meu site Front-End.', 'Seja Bem-Vindo!', 'Sinta-se a vontade para navegar.'],
 		element = document.querySelector('.bannerText');
 	var i1 = 0, i2 = 0, i3 = 0;
 		element.innerHTML = '';

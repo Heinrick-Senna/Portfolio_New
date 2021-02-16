@@ -43,6 +43,10 @@ body {
 }
 
 // Headder
+#HeadTittle p {
+	font: bold 1.5vw Agency FB;
+}
+
 #Logo {
 	width: 4.5vw;
 }
@@ -69,7 +73,7 @@ body {
 
 @media(min-width: 1720px) {
 	#HeadTittle p {
-		text-align: right!important;
+		text-align: center!important;
 	}
 }
 
@@ -137,9 +141,9 @@ body {
 				text-align      : justify;
 				transition      : transform 300ms ease-out, height 300ms ease-out;
 			}
-			img {
+			svg {
 				transform: rotateZ(90deg);
-				max-width: 2vw;
+				max-width: 6.5vw;
 			}
 		}
 		.SocialTextImg {
@@ -228,9 +232,61 @@ body {
 	}
 }
 
+#EmailSec {
+	form {
+		width: 50vw;
+	}
+	form:hover {
+		input, textarea {
+			transform: scale(.9);
+		}
+	}
+	textarea {
+		min-height: 6.5vh;
+	}
+	input, textarea {
+		border       : none;
+		padding      : .5vw 0 .5vw 1vw;
+		border-radius: 1vw;
+		margin-bottom: 1vw;
+		width        : 50vw;
+		outline      : none;
+		font         : bold 2rem Agency FB;
+		transition   : all 400ms ease;
+		&:hover, &:focus {
+			transform: scale(1)!important;
+			border-radius: 0;
+		}
+	}
+}
+
 
 @media(max-width: 970px) {
 	.Block {
-		height: 200vh;
+		// height: 200vh;
+	}
+	#HeadTittle p {
+		font: normal 6vw Agency FB;
+	}
+	.Tittle {
+		font-size: 10vw!important;
+	}
+	.SocialText {
+		div p {
+			transform: scaleY(1)!important;
+			display: block!important;
+			height: auto!important;
+		}
+	}
+	.SocialTextImg {
+		display: none;
+	}
+	.KnowledgeItens {
+		font-size: 4vw!important;
+	}
+	#EmailSec {
+		input, textarea {
+			font-size: 1rem;
+		}
 	}
 }
