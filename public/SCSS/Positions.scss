@@ -1,6 +1,6 @@
 @font-face {
 	font-family: AFB;
-
+	src: url('../../Design/Fonts/AgencyFB.ttf');
 }
 
 @font-face {
@@ -44,7 +44,7 @@ body {
 
 // Headder
 #HeadTittle p {
-	font: bold 1.5vw Agency FB;
+	font: bold 1.5vw AFB;
 }
 
 #Logo {
@@ -77,19 +77,10 @@ body {
 	}
 }
 
-// Neon Word 
-#NeonWord {
-	font             : bold 12vw aAnt;
-	text-align       : center;
-	-webkit-animation: glow 1s ease-in-out infinite alternate;
-	-moz-animation   : glow 1s ease-in-out infinite alternate;
-	animation        : glow 1s ease-in-out infinite alternate;
-}
-
 #ButtonPlay {
 	margin          : auto;
 	margin-top      : 15vh;
-	font            : bolder 350% Agency FB;
+	font            : bolder 350% AFB;
 	cursor          : pointer;
 	transition      : all 230ms ease;
 	user-select     : none;
@@ -115,7 +106,7 @@ body {
 //Social 
 #Social {
 	#SocialMe {
-		font-family: Agency FB;
+		font-family: AFB;
 		animation  : float linear 1.5s infinite alternate;
 		img {
 			width        : 16vw;
@@ -189,13 +180,13 @@ body {
 	}
 
 	#SocialMidiaT {
-		font : normal 2vw Agency FB;
+		font : normal 2vw AFB;
 	}
 }
 
 #Knowledge, #EmailSec {
 	.Tittle {
-		font : normal 4vw Agency FB;
+		font : normal 4vw AFB;
 	}
 }
 
@@ -212,7 +203,7 @@ body {
 		grid-template-columns: 55% 45%;
 		padding-left         : 2vw; 
 		list-style           : none;
-		font                 : normal 2.2vw Agency FB;
+		font                 : normal 2.2vw AFB;
 		transition           : transform 700ms, font-size 50ms, box-shadow 500ms;
 		user-select          : none;
 		span {
@@ -229,6 +220,13 @@ body {
 				transition: opacity 200ms;
 			}
 		}
+	}
+}
+
+#PortfolioSec {
+	h1 {
+		font: normal 5vw aAnt;
+		color: white;
 	}
 }
 
@@ -251,7 +249,7 @@ body {
 		margin-bottom: 1vw;
 		width        : 50vw;
 		outline      : none;
-		font         : bold 2rem Agency FB;
+		font         : bold 2rem AFB;
 		transition   : all 400ms ease;
 		&:hover, &:focus {
 			transform: scale(1)!important;
@@ -266,7 +264,7 @@ body {
 		// height: 200vh;
 	}
 	#HeadTittle p {
-		font: normal 6vw Agency FB;
+		font: normal 6vw AFB;
 	}
 	.Tittle {
 		font-size: 10vw!important;
