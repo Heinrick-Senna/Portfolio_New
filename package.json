@@ -4,7 +4,7 @@
   "description": "Meu site pessoal.",
   "main": "app.js",
   "scripts": {
-  	"start": "node app.js",
+    "start": "node app.js",
     "dev": "nodemon app.js"
   },
   "repository": {
@@ -28,7 +28,6 @@
     "mquery": ">=3.2.3",
     "mustache": "^4.0.1",
     "nodemailer": "^6.4.17",
-    "nodemon": "^2.0.6",
     "save": "^2.4.0"
   }
 }
