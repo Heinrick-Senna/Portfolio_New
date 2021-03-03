@@ -1,10 +1,10 @@
 window.onload = function () {
 	// Funções de Animação
-	AnimationIn();
-	document.getElementById('SkipAButton').onclick = function () {
-		AnimationSkip();
-	};
-	// LoadBlocks(localStorage.getItem('Page') || 0);
+	// AnimationIn();
+	// document.getElementById('SkipAButton').onclick = function () {
+	// 	AnimationSkip();
+	// };
+	LoadBlocks(localStorage.getItem('Page') || 0);
 
 	BannerInfo();
 
@@ -90,8 +90,9 @@ function PageSwitch (num) {
 			}
 
 			for (var i = allBlocks.length -1; i >= 0; i--) {
+				allBlocks[i].style.overflow = 'hidden';
+				allBlocks[i].style.maxHeight = '100vh';
 				allBlocks[i].style.marginTop = ((vHeight * 27.5) * (-offsetTop + i)) + 'px';
-				allBlocks[i].style.boxShadow = '0 0 0 .4vw white';
 			}
 
 			allBlocks.forEach(b => {
@@ -115,6 +116,8 @@ function PageSwitch (num) {
 
 					Block.classList.add('BlockOver', 'BlockSelected');
 					Block.style.transform = 'scale(1)';
+					Block.style.maxHeight = 'none';
+					Block.style.overflow = 'none';
 					if (num == 2) {
 						setTimeout(function(){
 							AnimationKnowledge(0);
@@ -142,8 +145,19 @@ function PageSwitch (num) {
 
 		}, 250);
 	} else {
+		document.querySelector('.MenuSelected').classList.remove('MenuSelected');
+		document.querySelectorAll('#MainMenu li')[num].classList.add('MenuSelected');
+		document.querySelector('.BlockOver').style.transform = 'scale(.25)';
 		document.querySelector('.BlockOver').classList.remove('BlockSelected', 'BlockOver');
 		allBlocks[num].classList.add('BlockOver', 'BlockSelected');
+		allBlocks[num].style.transform = 'scale(1)';
+		if (num == 2) {
+			setTimeout(function(){
+				AnimationKnowledge(0);
+			}, 1000) 
+		} else {
+			AnimationKnowledge(1);
+		}
 	}
 	localStorage.setItem('Page', num);
 }
