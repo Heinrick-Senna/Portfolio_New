@@ -86,13 +86,15 @@
 
 @media(max-width: 970px) {
 	#MainMenu {
+		position: relative;
+		text-align: center;
 		top: 4vw;
 		.MenuSelected {
 		 	&:hover svg {
 		 		width: 4vw!important;
 		 	}
 			span {
-				display: none!important;
+				display: inline!important;
 			}
 		}
 		li {

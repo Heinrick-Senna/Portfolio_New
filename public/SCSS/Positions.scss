@@ -184,9 +184,9 @@ body {
 	}
 }
 
-#Knowledge, #EmailSec {
+#Knowledge, #EmailSec, #PortfolioSec {
 	.Tittle {
-		font : normal 4vw AFB;
+		font : normal 5vw aAnt;
 	}
 }
 
@@ -223,13 +223,6 @@ body {
 	}
 }
 
-#PortfolioSec {
-	h1 {
-		font: normal 5vw aAnt;
-		color: white;
-	}
-}
-
 #EmailSec {
 	form {
 		width: 50vw;
@@ -260,8 +253,9 @@ body {
 
 
 @media(max-width: 970px) {
-	.Block {
-		// height: 200vh;
+	.BlockOver {
+		transform: scale(1)!important;
+		box-shadow: none!important;
 	}
 	#HeadTittle p {
 		font: normal 6vw AFB;
