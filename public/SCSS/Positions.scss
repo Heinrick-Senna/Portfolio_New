@@ -59,17 +59,15 @@ body {
 	cursor    : pointer;
 	right     : 1vw;
 	top       : 2vw;
-}
-
-#FloatTheme li {
-	position   : relative;
-	list-style : none;
-	display    : inline;
-	margin-left: .5vw;
-}
-
-#FloatTheme svg {
-	width: 1vw;
+	li {
+		position   : relative;
+		list-style : none;
+		display    : inline;
+		margin-left: .5vw;
+	}
+	svg {
+		width: 1vw;
+	}
 }
 
 @media(min-width: 1720px) {
@@ -243,11 +241,30 @@ body {
 		margin-bottom: 1vw;
 		width        : 50vw;
 		outline      : none;
-		font         : bold 2rem AFB;
+		font         : bold 2vw AFB;
 		transition   : all 400ms ease;
 		&:hover, &:focus {
 			transform: scale(1)!important;
 			border-radius: 0;
+		}
+	}
+	button {
+		font         : bold 2vw AFB;
+		width        : 20vw;
+		min-height   : 5vh;
+		background   : white;
+		border       : dashed;
+		border-color : transparent;
+		outline      : none;
+		margin-bottom: 2vh;
+		transition   : all .2s ease-in;
+		
+
+		&:hover, &:focus {
+			background   : transparent;
+			color        : white;
+			border       : dashed;
+			border-radius: .5vw;
 		}
 	}
 }
@@ -278,8 +295,9 @@ body {
 		font-size: 4vw!important;
 	}
 	#EmailSec {
-		input, textarea {
+		input, textarea, button {
 			font-size: 1rem;
 		}
+
 	}
 }

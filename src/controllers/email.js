@@ -3,8 +3,8 @@ require("dotenv-safe").config();
 let emailController = {};
 
 	const transporter = nodemailer.createTransport({
-		host: 'smtp-mail.outlook.com',
-		port: 25,
+		host: 'smtp.umbler.com',
+		port: 587,
 		secure: false,
 		auth: {
 			user: process.env.AUTH,
