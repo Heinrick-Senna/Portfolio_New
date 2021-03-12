@@ -4,8 +4,9 @@
   "description": "Meu site pessoal.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "nodemon app.js",
+    "sass": "node-sass public/scss -o public/css --output-style compressed -w ",
+    "dev": "run-p sass start -s"
   },
   "repository": {
     "type": "git",

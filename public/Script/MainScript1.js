@@ -1,30 +1,31 @@
 window.onload = function () {
-	// Funções de Animação
-	// AnimationIn();
-	// document.getElementById('SkipAButton').onclick = function () {
-	// 	AnimationSkip();
-	// };
-	LoadBlocks(localStorage.getItem('Page') || 0);
+	// Verificar Config
+	if (localStorage.getItem('Config') == 0) {
+		document.querySelector('#AnimationCheck').checked = false;
+		document.querySelector('#AnimationSpace').remove();
+		document.querySelector('#MainMenu').style.display = 'block';
+		// Carregar Página
+		LoadBlocks(localStorage.getItem('Page') || 0);
+	} else {
+		document.querySelector('#AnimationCheck').checked = true;
+		// Funções de Animação
+		AnimationIn();
+		document.getElementById('SkipAButton').onclick = function () {
+			AnimationSkip();
+		};
+	}
 
 	BannerInfo();
 
-
-
-	var arrowSocial = document.querySelector('.SocialText svg'),
-		textSocial = document.querySelector('.SocialText p'),
-		arrowPot = document.querySelector('.SocialTextImg');
-	arrowSocial.onclick = function (){
-		if (textSocial.style.transform != 'none') {
-			textSocial.style.transform = 'none';
-			textSocial.style.height = '19vh';
+	// StartUp Config
+	document.querySelector('#AnimationCheck').addEventListener('click', function(){
+	let chk = document.querySelector('#AnimationCheck').checked;
+		if (chk) {
+			localStorage.setItem('Config', 1);
 		} else {
-			textSocial.style.transform = 'scaleY(0)';
-			textSocial.style.height = '0';
+			localStorage.setItem('Config', 0);
 		}
-		arrowPot.style.transform = 'rotate(' + (parseInt(arrowPot.getAttribute('style').replace(/[^0-9]/g,''))+180) + 'deg)';
-
-	}
-
+	});
 
 	// Troca de Páginas
 	var menuIcons = document.querySelectorAll('#MainMenu li');

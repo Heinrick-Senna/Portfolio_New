@@ -70,6 +70,15 @@ body {
 	}
 }
 
+#configContainer {
+	text-align: center;
+	position  : absolute;
+	cursor    : pointer;
+	right     : 1vw;
+	top       : 5vw;
+	color: white;
+}
+
 @media(min-width: 1720px) {
 	#HeadTittle p {
 		text-align: center!important;
@@ -126,22 +135,9 @@ body {
 			div p {
 				font-size       : 2vw;
 				transform-origin: top;
-				transform       : scaleY(0);
-				height          : 0;
 				text-align      : justify;
 				transition      : transform 300ms ease-out, height 300ms ease-out;
 			}
-			svg {
-				transform: rotateZ(90deg);
-				max-width: 6.5vw;
-			}
-		}
-		.SocialTextImg {
-			max-height: 19vh;
-			width     : 5%;
-			text-align: center;
-			transition: transform .7s;
-			cursor    : pointer;
 		}
 	}
 
