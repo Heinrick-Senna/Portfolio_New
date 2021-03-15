@@ -1,25 +1,28 @@
 window.onload = function () {
 	// Verificar Config
 	if (localStorage.getItem('Config') == 0) {
-		document.querySelector('#AnimationCheck').checked = false;
-		document.querySelector('#AnimationSpace').remove();
-		document.querySelector('#MainMenu').style.display = 'block';
+		qsl('#AnimationCheck').checked = false;
+		qsl('#AnimationSpace').remove();
+		qsl('#MainMenu').style.display = 'block';
 		// Carregar Página
 		LoadBlocks(localStorage.getItem('Page') || 0);
 	} else {
-		document.querySelector('#AnimationCheck').checked = true;
+		qsl('#AnimationSpace').removeAttribute('style');
+		qsl('#AnimationCheck').checked = true;
 		// Funções de Animação
-		AnimationIn();
-		document.getElementById('SkipAButton').onclick = function () {
-			AnimationSkip();
-		};
+		setTimeout(function(){
+			AnimationIn();
+			document.getElementById('SkipAButton').onclick = function () {
+				AnimationSkip();
+			};
+		}, 15);
 	}
 
 	BannerInfo();
 
 	// StartUp Config
-	document.querySelector('#AnimationCheck').addEventListener('click', function(){
-	let chk = document.querySelector('#AnimationCheck').checked;
+	qsl('#AnimationCheck').addEventListener('click', function(){
+	let chk = qsl('#AnimationCheck').checked;
 		if (chk) {
 			localStorage.setItem('Config', 1);
 		} else {
@@ -28,7 +31,7 @@ window.onload = function () {
 	});
 
 	// Troca de Páginas
-	var menuIcons = document.querySelectorAll('#MainMenu li');
+	var menuIcons = qsla('#MainMenu li');
 	for (i = 0; i < menuIcons.length; i++) {
 		menuIcons[i].addEventListener('click', function(){
 			var classCheck = this.classList.contains('MenuSelected');
@@ -43,10 +46,10 @@ window.onload = function () {
 	};
 
 	// Troca  de Temas
-	var themeIcons = document.querySelectorAll('#FloatTheme li');
+	var themeIcons = qsla('#FloatTheme li');
 	for (i = 0; i < themeIcons.length; i++) {
 		themeIcons[i].addEventListener('click', function(){
-			var actualTheme = document.querySelector('#ThemeLink').getAttribute('href').replace(/[^0-9]/g,''), 
+			var actualTheme = qsl('#ThemeLink').getAttribute('href').replace(/[^0-9]/g,''), 
 				clickTheme = this.getAttribute('id').replace(/[^0-9]/g,'');
 			if (actualTheme != clickTheme)
 				ThemeSwitch(clickTheme);
@@ -55,15 +58,24 @@ window.onload = function () {
 
 };
 
+// Função Global
+	function qsl(element) {
+		return document.querySelector(element);
+	}
+
+	function qsla(element) {
+		return document.querySelectorAll(element);
+	}
+
 // Funções //
 
 // Carrega Páginas
 function LoadBlocks (num) {
-	var Block = document.querySelectorAll('.Block')[num];
+	var Block = qsla('.Block')[num];
 	Block.style.display = 'block';
 	Block.classList.add('BlockSelected', 'BlockOver');
 
-	document.querySelectorAll('#MainMenu li')[num].classList.add('MenuSelected');
+	qsla('#MainMenu li')[num].classList.add('MenuSelected');
 	if (num == 2) {
 		setTimeout(function(){
 			AnimationKnowledge(0);
@@ -74,11 +86,11 @@ function LoadBlocks (num) {
 // Troca Páginas
 function PageSwitch (num) {
 	
-	var allBlocks = document.querySelectorAll('.Block');
+	var allBlocks = qsla('.Block');
 	if(window.innerWidth > 970) {
-		document.querySelector('#MainMenu').style.opacity = '0';		
+		qsl('#MainMenu').style.opacity = '0';		
 		setTimeout(function(){
-			var OffSet = document.querySelector('#OffSet'),
+			var OffSet = qsl('#OffSet'),
 				Block = allBlocks[num], vHeight = (window.innerHeight * 0.01);
 			
 			OffSet.style.display = 'block';
@@ -101,14 +113,14 @@ function PageSwitch (num) {
 				b.style.display = 'block';
 			});
 
-			document.querySelector('.MenuSelected').removeAttribute('class');
-			document.querySelector('body').style.overflowY = 'hidden';
-			document.querySelectorAll('#MainMenu li')[num].classList.add('MenuSelected');
-			document.querySelector('.BlockOver').classList.remove('BlockSelected');
+			qsl('.MenuSelected').removeAttribute('class');
+			qsl('body').style.overflowY = 'hidden';
+			qsla('#MainMenu li')[num].classList.add('MenuSelected');
+			qsl('.BlockOver').classList.remove('BlockSelected');
 			
 			
 			setTimeout(function(){
-				document.querySelector('.BlockOver').classList.remove('BlockOver');
+				qsl('.BlockOver').classList.remove('BlockOver');
 				for (var i = allBlocks.length - 1; i >= 0; i--) {
 					allBlocks[i].style.marginTop = ((vHeight * 27.5) * (-num + i)) + 'px';
 				}
@@ -133,10 +145,10 @@ function PageSwitch (num) {
 							b.style.display = 'none';
 						});
 
-						document.querySelector('#OffSet').style.display = 'none';
-						document.querySelector('#OffSet').removeAttribute('class');
-						document.querySelector('#MainMenu').removeAttribute('style');
-						document.querySelector('body').removeAttribute('style');
+						qsl('#OffSet').style.display = 'none';
+						qsl('#OffSet').removeAttribute('class');
+						qsl('#MainMenu').removeAttribute('style');
+						qsl('body').removeAttribute('style');
 						
 					}, 750);
 
@@ -146,10 +158,10 @@ function PageSwitch (num) {
 
 		}, 250);
 	} else {
-		document.querySelector('.MenuSelected').classList.remove('MenuSelected');
-		document.querySelectorAll('#MainMenu li')[num].classList.add('MenuSelected');
-		document.querySelector('.BlockOver').style.transform = 'scale(.25)';
-		document.querySelector('.BlockOver').classList.remove('BlockSelected', 'BlockOver');
+		qsl('.MenuSelected').classList.remove('MenuSelected');
+		qsla('#MainMenu li')[num].classList.add('MenuSelected');
+		qsl('.BlockOver').style.transform = 'scale(.25)';
+		qsl('.BlockOver').classList.remove('BlockSelected', 'BlockOver');
 		allBlocks[num].classList.add('BlockOver', 'BlockSelected');
 		allBlocks[num].style.transform = 'scale(1)';
 		if (num == 2) {
@@ -165,9 +177,9 @@ function PageSwitch (num) {
 
 // Temas
 function ThemeSwitch (clickTheme) {
-	var themesIco = document.querySelectorAll('#FloatTheme li'),
+	var themesIco = qsla('#FloatTheme li'),
 	 	newTheme = 'CSS/Colors' + clickTheme + '.css';
-	 	document.querySelector('#ThemeLink').setAttribute('href', newTheme);
+	 	qsl('#ThemeLink').setAttribute('href', newTheme);
 	 	
 	 	switch (clickTheme) {
 	 		case 0:
@@ -189,9 +201,9 @@ function ThemeSwitch (clickTheme) {
 
 // Animação de Início//
 function AnimationIn () {
-	var AnimSpace = document.querySelector('#AnimationSpace'),
-		Imgs = document.querySelectorAll('.LogoPart'),
-		Names = document.querySelectorAll('.AnimationName');
+	var AnimSpace = qsl('#AnimationSpace'),
+		Imgs = qsla('.LogoPart'),
+		Names = qsla('.AnimationName');
 
 	// Abrindo Animação
 	Imgs[0].style.marginTop = '-17.5%';
@@ -211,7 +223,7 @@ function AnimationIn () {
 					Imgs[1].style.marginTop = '0';
 					Imgs[1].removeAttribute('style');
 					setTimeout(function(){
-						if(document.querySelector('#AnimationSpace') != null)
+						if(qsl('#AnimationSpace') != null)
 							AnimationSkip();
 					}, 1500);
 				}, 1000);
@@ -225,13 +237,13 @@ function AnimationIn () {
 
 // Substituindo Animação Início
 function AnimationSkip () {
-	var Cover = document.querySelector('#BlackScreen');
+	var Cover = qsl('#BlackScreen');
 	Cover.style.transform = 'scaleY(1)';
 	Cover.style.transformOrigin = 'top';
 
 	setTimeout(function(){
-		document.querySelector('#AnimationSpace').remove();
-		document.querySelector('#MainMenu').removeAttribute('style');
+		qsl('#AnimationSpace').remove();
+		qsl('#MainMenu').removeAttribute('style');
 		LoadBlocks(localStorage.getItem('Page') || 0);
 	}, 500);
 
@@ -241,7 +253,7 @@ function AnimationSkip () {
 
 		setTimeout(function(){
 			Cover.remove();
-			document.querySelector('#AnimationLink').remove();
+			qsl('#AnimationLink').remove();
 		}, 500);
 		
 	}, 1000);
@@ -260,7 +272,7 @@ function AnimationText (text, element, speed) {
 // Animações Aba Home
 function BannerInfo () {
 	var ptexts = ['Esse é o meu site Front-End.', 'Seja Bem-Vindo!', 'Sinta-se a vontade para navegar.'],
-		element = document.querySelector('.bannerText');
+		element = qsl('.bannerText');
 	var i1 = 0, i2 = 0, i3 = 0;
 		element.innerHTML = '';
 		AnimationText(ptexts[0], element, 115);
@@ -300,9 +312,9 @@ function BannerInfo () {
 
 // Animação Aba Conhecimentos
 function AnimationKnowledge (valueS) {
-	var itemspan = document.querySelectorAll('.KnowText');
+	var itemspan = qsla('.KnowText');
 	if (valueS == 0) {
-		document.querySelectorAll('.KnowledgeItens').forEach(I => {
+		qsla('.KnowledgeItens').forEach(I => {
 			I.style.transform = 'rotateX(0deg)';
 		});
 		setTimeout(function(){
@@ -323,7 +335,7 @@ function AnimationKnowledge (valueS) {
 			
 		}, 200);
 	} else {
-		document.querySelectorAll('.KnowledgeItens').forEach(I => {
+		qsla('.KnowledgeItens').forEach(I => {
 			I.style.transform = 'rotateX(180deg)';
 		});
 	}
