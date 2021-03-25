@@ -1,37 +1,31 @@
 const express = require('express');
 const app = require('./config/express')();
 const session = require('express-session');
-const engines = require('consolidate');
+const exphbs = require('express-handlebars');
 require("dotenv-safe").config();
 
 
-// Config
-	// Sessão
-		app.use(session({
-	        secret: process.env.AUTH ,
-	        resave: true,
-	        saveUninitialized: true
-   		 }));
 
 
+// Config Sessão
+	app.use(session({
+		secret: process.env.AUTH ,
+		resave: true,
+		saveUninitialized: true
+		}));
 
+	// Static para os arquivos da pasta /public
+	app.use(express.static(__dirname + '/public'));
+	app.use(express.static(__dirname + '/views'));
 
-
-
-// Static para os arquivos da pasta /public
-app.use(express.static(__dirname + '/public'));
-app.use(express.static(__dirname + '/views'));
-
-app.engine('html', engines.mustache);
-app.set('view engine', 'html');
+	app.engine('hbs', exphbs({defaultLayout: 'main', extname: '.hbs'}));
+	app.set('view engine', 'hbs');
 
 
 // iniciando Servidor
 app.listen(app.get('port'), () => {
-	
-});
-
-   
+	console.log('Servidor Rodando Na Porta: ' + app.get('port'));
+});   
 
 // Primeiro Diretório
 app.get('/', function(req, res) {

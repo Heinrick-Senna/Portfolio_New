@@ -14,8 +14,6 @@ module.exports = () => {
 
 	consign({cwd: 'src'})
 		.include('controllers')
-		.include('routes')
-
 		.into(app);
 		
 	return app;

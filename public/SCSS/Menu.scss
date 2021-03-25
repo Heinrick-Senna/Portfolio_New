@@ -1,3 +1,8 @@
+@font-face {
+	font-family: AFB;
+	src: url('../../Design/Fonts/AgencyFB.ttf');
+}
+
 // Menu
 #MainMenu {
 	position     : absolute;
@@ -84,40 +89,57 @@
 	padding-left: 0!important;
 }
 
-@media(max-width: 970px) {
+/* sm Small devices (phones, 576px e superior) */
+@media (max-width: 576px) {
 	#MainMenu {
+		top: 0;
+		left: 0;
 		position: relative;
 		text-align: center;
-		top: 0vw;
+		margin-top: .5rem!important;
+		margin-bottom: .5rem!important;
 		.MenuSelected {
+			svg {
+				width: 2rem!important;
+			}
 		 	&:hover svg {
-		 		width: 4vw!important;
+		 		width: 2rem!important;
 		 	}
 			span {
 				display: inline!important;
 			}
 		}
 		li {
+			margin-top: .5rem;
 			&:hover {
 				border: none;
 				svg {
-					width       : 4vw;
+					width       : 2rem;
 					margin-left : 0;
 					padding-left: 0;
 					border: none;
 				}
 			}
 			span {
-				font          : normal 2.5vw Agency FB;
+				font      : normal 2rem AFB;
 				display   : inline;
 				visibility: visible;
 				opacity   : 1;
 			}
 			svg {
-				width: 4vw;
+				width: 2rem;
 				border: none;
 			}
 		} 
 
 	}
 }
+
+/* md Medium devices (tablets, 768px e superior)*/
+@media (max-width: 768px) {}
+
+/* lg Large devices (desktops, 992px e superior)*/
+@media (max-width: 992px) {}
+
+/* xl Extra large devices (large desktops, 1200px e superior)*/
+@media (max-width: 1200px) {}

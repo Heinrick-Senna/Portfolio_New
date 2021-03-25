@@ -85,9 +85,9 @@ function LoadBlocks (num) {
 
 // Troca Páginas
 function PageSwitch (num) {
-	
+
 	var allBlocks = qsla('.Block');
-	if(window.innerWidth > 970) {
+	if(window.innerWidth > 576) {
 		qsl('#MainMenu').style.opacity = '0';		
 		setTimeout(function(){
 			var OffSet = qsl('#OffSet'),
@@ -96,15 +96,14 @@ function PageSwitch (num) {
 			OffSet.style.display = 'block';
 			OffSet.classList.add('Opaque');
 
-			for (var i = allBlocks.length - 1; i >= 0; i--) {
+			for (let i = allBlocks.length - 1; i >= 0; i--) {
+				allBlocks[i].style.maxHeight = '100vh';
 				if (allBlocks[i].classList.contains('BlockSelected')) {
 					var offsetTop = i;
 				}
 			}
 
-			for (var i = allBlocks.length -1; i >= 0; i--) {
-				allBlocks[i].style.overflow = 'hidden';
-				allBlocks[i].style.maxHeight = '100vh';
+			for (let i = allBlocks.length -1; i >= 0; i--) {
 				allBlocks[i].style.marginTop = ((vHeight * 27.5) * (-offsetTop + i)) + 'px';
 			}
 
@@ -121,16 +120,14 @@ function PageSwitch (num) {
 			
 			setTimeout(function(){
 				qsl('.BlockOver').classList.remove('BlockOver');
-				for (var i = allBlocks.length - 1; i >= 0; i--) {
+				for (let i = allBlocks.length - 1; i >= 0; i--) {
 					allBlocks[i].style.marginTop = ((vHeight * 27.5) * (-num + i)) + 'px';
 				}
 
 				setTimeout(function(){
-
 					Block.classList.add('BlockOver', 'BlockSelected');
 					Block.style.transform = 'scale(1)';
-					Block.style.maxHeight = 'none';
-					Block.style.overflow = 'none';
+
 					if (num == 2) {
 						setTimeout(function(){
 							AnimationKnowledge(0);
@@ -144,12 +141,14 @@ function PageSwitch (num) {
 						allBlocks.forEach(b => {
 							b.style.display = 'none';
 						});
-
 						qsl('#OffSet').style.display = 'none';
 						qsl('#OffSet').removeAttribute('class');
 						qsl('#MainMenu').removeAttribute('style');
 						qsl('body').removeAttribute('style');
 						
+						for (let i = 0; i < allBlocks.length - 1;i++) {
+							allBlocks[i].style.maxHeight = 'none';
+						}
 					}, 750);
 
 				}, 550);
@@ -161,6 +160,7 @@ function PageSwitch (num) {
 		qsl('.MenuSelected').classList.remove('MenuSelected');
 		qsla('#MainMenu li')[num].classList.add('MenuSelected');
 		qsl('.BlockOver').style.transform = 'scale(.25)';
+		qsl('.BlockOver').style.display = 'none';
 		qsl('.BlockOver').classList.remove('BlockSelected', 'BlockOver');
 		allBlocks[num].classList.add('BlockOver', 'BlockSelected');
 		allBlocks[num].style.transform = 'scale(1)';

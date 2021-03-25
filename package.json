@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon app.js",
     "sass": "node-sass public/scss -o public/css --output-style compressed -w ",
-    "dev": "run-p sass start -s"
+    "dev": "run-p sass start"
   },
   "repository": {
     "type": "git",
@@ -21,14 +21,15 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "consign": "^0.1.6",
-    "consolidate": "^0.16.0",
     "dotenv-safe": "^8.2.0",
     "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
     "express-session": "^1.17.1",
     "mongoose": "^5.10.15",
     "mquery": ">=3.2.3",
     "mustache": "^4.0.1",
     "nodemailer": "^6.4.17",
+    "require": "^2.4.20",
     "save": "^2.4.0"
   }
 }
