@@ -1,0 +1,506 @@
+$backgroundBlock: black !default;
+$w: white !default;
+$mainColor: white !default;
+$b: black !default;
+$menuColor: white !default;
+
+
+.Block {
+	overflow: hidden;
+	box-shadow: 0 0 0 .4vw white;
+	position  : absolute;
+	min-height: 100vh;
+	max-width : 100%;
+	width     : 100%;
+	transition: transform 750ms ease, margin-top 500ms ease-in;
+	background-color: $backgroundBlock;
+}
+
+.BlockOver {
+	z-index: 2;
+	display: block!important;
+}
+
+.BlockSelected {
+	margin-top: 0!important;
+}
+
+.Opaque {
+	position: absolute;
+	width   : 100%;
+	height  : 100%;
+	z-index : 5;
+}
+
+#ButtonConfig, #ButtonMenu {
+	fill: $w;
+	display: none;
+}
+
+#ConfigContainer {
+	display: none;
+	svg {
+		width: 2vw;
+	}
+}
+
+.Block {
+	.Tittle {
+		padding-top: 1rem;
+		margin-bottom: 1rem;
+		text-align: center;
+		font: normal 2rem Font2;
+	}
+	hr {
+		height: .1rem;
+		border: none;
+		background-color: $mainColor;
+	}
+}
+
+#Home {
+	#HeadTittle {
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		#Logo {
+			user-select: none;
+			width: 40%;
+			padding: 2rem;
+			img {
+				float: right;
+				width: 10rem;
+			}
+		}
+		.bannerText {
+			display: flex;
+			width: 60%;
+			align-items: center;
+			font: bold 3rem Font1;
+		}
+	}
+}
+
+#Social {
+	hr {
+		display: none;
+	}
+	font: normal 2rem Font1;
+	#SocialHigher {
+		padding-top: 2rem;
+		margin-bottom: 1rem;
+		display: flex;
+		justify-content: center;
+		#SocialPic {
+			width: 12rem;
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			align-content: center;
+			img {
+				margin: auto 0;
+				user-select: none;
+				width: inherit;
+				border-radius: .4rem;
+			}
+		}
+		#SocialTittles {
+			margin-left: 1rem;
+			h1 {
+				font-size: 5rem;
+			}
+		}
+	}
+	#SocialBottom {
+		display: flex;
+		justify-content: center;
+		padding: 1rem 8rem;
+		br:nth-of-type(2) {
+			display: none;
+		}
+		p {
+			text-align: justify;
+		}
+		& + hr {
+			display: block;
+			margin-bottom: 1.5rem;
+		}
+	}
+	#SocialMidias {
+		#TittleMidia {
+			text-align: center;
+			padding: 0!important;
+		}
+		#Midias {
+			user-select: none;
+			padding: 1.25rem 0;
+			text-align: center;
+			a {
+				margin-left: 4rem;
+				&:first-of-type {
+					margin-left: 0;
+				}
+			}
+			span {
+				img {
+					width: 5rem;
+					transition: filter 400ms ease;
+				}
+				&:hover img {
+					filter: blur(.6vw);
+				}
+				a:hover {
+					margin-top: -.5rem;
+				}
+				img:hover {
+					filter: blur(0)!important;
+				}
+			}
+		}
+	}
+}
+
+#Knowledge {
+	#KnowledgeList {
+		padding: .25rem 6rem;
+		display: grid;
+		grid-template-columns: auto auto;
+		.KnowledgeItens {
+			transform            : rotateX(180deg);
+			backface-visibility  : hidden;
+			display              : grid;
+			grid-template-columns: 50% 50%;
+			font: normal 2rem Font1;
+			transition           : transform 700ms, font-size 50ms, box-shadow 300ms ease-in;
+			user-select          : none;
+			background: $b;
+			border: .1vw solid $mainColor;
+			box-shadow: .2vw .4vw .5vw $mainColor;
+			margin: 1rem;
+			.KnowText {
+				display: flex;
+				justify-content: center;
+				align-content: center;
+				align-items: center;
+				width: 100%;
+				height: 100%;
+			}
+			.KnowledgeLevel {
+				transform       : scaleX(0);
+				transition      : transform 400ms, font-size 50ms, box-shadow 100ms;
+				padding         : 1vw;
+				padding-left    : 2vw;
+				transform-origin: left;
+				border-left: .1vw $w dashed;
+				background-color: rgba(255,255,255,.1);
+				span {
+					display: flex;
+					justify-content: center;
+					align-content: center;
+					align-items: center;
+					opacity   : 0;
+					transition: opacity 200ms;
+				}
+			}
+			&:hover {
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+#EmailSec {
+	#FormContainer {
+		padding: 2rem 0;
+		margin-top: 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		width: 100%;
+		user-select: none;
+		form {
+			display: grid;
+			grid-template-columns: auto;
+			font: normal 3rem Font1;
+			text-align: center;
+			input, textarea {
+				margin: 1rem 0;
+				border       : none;
+				padding: .5rem 0;
+				border-radius: .6vw;
+				text-align: center;
+				width        : 50vw;
+				outline      : none;
+				font         : bold 2rem Font1;
+				transition   : all 300ms ease;
+				&:hover, &:focus {
+					transform: scale(1.1);
+					border-radius: 0;
+				}
+			}
+			button {
+				cursor: pointer;
+				font         : bold 2rem Font1;
+				width        : 20vw;
+				min-height   : 5vh;
+				background   : white;
+				border       : dashed;
+				border-color : transparent;
+				outline      : none;
+				margin: 1rem auto;
+				transition   : all .2s ease-in;
+				&:hover, &:focus {
+					background   : transparent;
+					color        : white;
+					border       : dashed;
+					border-radius: .5vw;
+				}
+			}
+		}
+		}
+	}
+
+
+/* xl Extra large devices (large desktops, 1200px e superior)*/
+@media (max-width: 1200px) {
+
+}
+
+/* lg Large devices (desktops, 992px e superior)*/
+@media (max-width: 992px) {
+
+}
+
+/* md Medium devices (tablets, 768px e superior)*/
+@media (max-width: 768px) {
+	body, html {
+		overflow-x: hidden;
+		background-color: $backgroundBlock;
+	}
+
+	.Block {
+		.Tittle {
+			font-size: 2rem;
+		}
+	}
+
+
+	// Blocks Style
+	#Home {
+		#HeadTittle {
+			display: block;
+			#Logo {
+				padding: 0;
+				width: 100vw;
+				display: flex;
+				align-items: center;
+				align-content: center;
+				justify-content: center;
+			}
+			.bannerText {
+				display: block;
+				width: unset;
+				text-align: center;
+				font-size: 3rem;
+			}
+		}
+	}
+
+	#Social {
+		hr {
+			display: block;
+			margin: 1.5rem 0; 
+		}
+		#SocialHigher {
+			display: block;
+			#SocialPic {
+				width: 100vw;
+				img {
+					width: 10rem;
+				}
+			}
+			#SocialTittles {
+				margin-left: 0;
+				font-size: 2rem;
+				text-align: center;
+				h1 {
+					font-size: 3rem;
+				}
+				p, h1 {
+					margin-bottom: 1.25rem;
+				}
+			}
+		}
+		#SocialBottom {
+			padding: 0 1.25rem;
+			p {
+				text-align: justify;
+			}
+		}
+	}
+
+	#Knowledge {
+		#KnowledgeList {
+			padding: .25rem 2rem;
+			grid-template-columns: auto;
+			.KnowledgeItens {
+				margin: 1rem .25rem;
+				.KnowledgeLevel {
+					padding         : 0vw;
+				}
+			}
+		}
+	}
+}
+
+/* sm Small devices (cellphones, 576px e superior) */
+@media (max-width: 576px) {
+	body, html {
+		overflow-x: hidden;
+		background-color: $backgroundBlock;
+	}
+
+	.Block {
+		padding-top: 1rem;
+		box-shadow: none!important;
+		max-width: 100vw;
+		min-height: 0;
+	}
+
+	#ButtonConfig, #ButtonMenu {
+		user-select: none;
+		outline: none;
+		padding: .75rem;
+		width: 2.5rem;
+		display: block;
+		cursor: pointer;
+		position: absolute;
+		right: 1vw;
+		top: 0rem;
+		z-index: 4;
+		fill: white;
+	}
+
+	#ButtonConfig {
+		margin-top: 3rem;
+	}
+
+	#ConfigContainer {
+		display: none!important;
+		#FloatTheme {
+			li {
+				list-style: none;
+			}
+			svg {
+				max-width: 5rem;
+			}
+		}
+	}
+
+	.Block {
+		.Tittle {
+			font-size: 2rem;
+		}
+	}
+
+
+	// Blocks Style
+	#Home {
+		#HeadTittle {
+			display: block;
+			#Logo {
+				padding: 0;
+				width: 100vw;
+				display: flex;
+				align-items: center;
+				align-content: center;
+				justify-content: center;
+			}
+			.bannerText {
+				display: block;
+				width: unset;
+				text-align: center;
+				font-size: 3rem;
+			}
+		}
+	}
+
+	#Social {
+		hr {
+			display: block;
+			margin: 1.5rem 0; 
+		}
+		#SocialHigher {
+			display: block;
+			#SocialPic {
+				width: 100vw;
+				img {
+					width: 10rem;
+				}
+			}
+			#SocialTittles {
+				margin-left: 0;
+				font-size: 2rem;
+				text-align: center;
+				h1 {
+					font-size: 3rem;
+				}
+				p, h1 {
+					margin-bottom: 1.25rem;
+				}
+			}
+		}
+		#SocialBottom {
+			padding: 0 1.25rem;
+			p {
+				text-align: justify;
+			}
+		}
+		#SocialMidias {
+			#Midias a {
+				margin-left: 0;
+				img {
+					width: 5rem;
+				}
+			}
+		}
+	}
+
+	#Knowledge {
+		#KnowledgeList {
+			padding: .25rem 0rem;
+			grid-template-columns: auto;
+			border-width: .6vw;
+			margin-bottom: .75rem;
+			.KnowledgeItens {
+				font-size: 1.75rem;
+				margin: .5rem .5rem;
+				.KnowledgeLevel {
+					padding         : 0vw;
+				}
+			}
+		}
+	}
+
+	#EmailSec {
+		#FormContainer {
+			form {
+				input, textarea {
+					border: 1vw solid transparent;
+					width        : 85vw;
+					&:hover, &:focus {
+						border: 1vw solid $menuColor;
+					}
+				}
+				button {
+					width: 70vw;
+				}
+			}
+		}
+
+	}
+}
+
+
+

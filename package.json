@@ -25,6 +25,7 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.2.1",
     "express-session": "^1.17.1",
+    "ip": "^1.1.5",
     "mongoose": "^5.10.15",
     "mquery": ">=3.2.3",
     "mustache": "^4.0.1",

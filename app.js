@@ -2,6 +2,7 @@ const express = require('express');
 const app = require('./config/express')();
 const session = require('express-session');
 const exphbs = require('express-handlebars');
+const ip = require('ip');
 require("dotenv-safe").config();
 
 
@@ -24,7 +25,7 @@ require("dotenv-safe").config();
 
 // iniciando Servidor
 app.listen(app.get('port'), () => {
-	console.log('Servidor Rodando Na Porta: ' + app.get('port'));
+	console.log('http://' + ip.address() + ':' + app.get('port'));
 });   
 
 // Primeiro Diretório
@@ -33,6 +34,6 @@ app.get('/', function(req, res) {
 });
 
 // Erro 404
-// app.use((req, res, next) => {
-// 	res.status(404).render('notfound');
-// })
+app.use((req, res, next) => {
+	res.status(404).redirect('/');
+})
