@@ -5,7 +5,7 @@ window.onload = function () {
 		LoadBlocks(localStorage.getItem('Page') || 0);
 	} else {
 		qsl('#AnimationSpace').removeAttribute('style');
-		qsl('#AnimationCheck').checked = true;
+		localStorage.setItem('Config', 0);
 		// Funções de Animação
 		setTimeout(function(){
 			AnimationIn();
@@ -14,6 +14,13 @@ window.onload = function () {
 				
 			};
 		}, 15);
+	}
+	var themeSwtich = 0;
+	if (localStorage.getItem('Theme') == 0) {
+		themeSwtich++;
+		ThemeFunctions(qsl('#ConfigContainer li'), 0);
+	} else {
+		ThemeFunctions(qsl('#ConfigContainer li'), 1);
 	}
 
 	BannerInfo();
@@ -45,18 +52,15 @@ window.onload = function () {
 	});
 
 	// Troca de Temas
-	let themeIcons = qsla('#FloatTheme li');
-	for (var i = 0, len = themeIcons.length; i < len; i++) {
-		(function(index){
-			themeIcons[i].onclick = () => { 
-				qsl('#ThemeLink').getAttribute('href').replace(/[^0-9]/g,'') == index ? null : ThemeSwitch(index);
-			}    
-		})(i);
-	}
+	
+	qsl('#FloatTheme li').addEventListener('click', function(){
+		ThemeFunctions(this, themeSwtich);
+		themeSwtich++;
+	});
 
 	// Troca de Páginas
 	let menuIcons = qsla('#MainMenu li');
-	for (var i = 0, len = menuIcons.length; i < len; i++) {
+	for (var i = 0; i < menuIcons.length; i++) {
 		(function(index){
 			menuIcons[i].onclick = () => {
 				if (window.innerWidth < 576) {
@@ -97,16 +101,48 @@ function CloseOpenMenu () {
 
 // Abrir e Fechar Configurações
 function CloseOpenConfig () {
-	if (ConfigVerify % 2 === 0) {
-		if (qsl('#MainMenu').getAttribute('style') != null) {
-			qsl('#MainMenu').removeAttribute('Style');
-			MenuVerify = 0;
+	if (window.innerWidth > 576) {
+		if (ConfigVerify % 2 === 0 ) {
+			qsl('#ConfigContainer').setAttribute('style', 'right: 0!important;');
+		} else {
+			qsl('#ConfigContainer').removeAttribute('style')
 		}
-		qsl('#ConfigContainer').setAttribute('style', 'display:block!important');
 	} else {
-		qsl('#ConfigContainer').removeAttribute('Style');
+		if (ConfigVerify % 2 === 0) {
+			if (qsl('#MainMenu').getAttribute('style') != null) {
+				qsl('#MainMenu').removeAttribute('Style');
+				MenuVerify = 0;
+			}
+			qsl('#ConfigContainer').setAttribute('style', 'display:block!important');
+		} else {
+			qsl('#ConfigContainer').removeAttribute('Style');
+		}
 	}
 	ConfigVerify++;	
+}
+
+function ThemeFunctions (element, n) {
+	if (n % 2 === 0) {
+		localStorage.setItem('Theme', 0);
+		element.innerHTML = '<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 312.999 312.999" style="enable-background:new 0 0 312.999 312.999;" xml:space="preserve">\
+		<path d="M305.6,178.053c-3.2-0.8-6.4,0-9.2,2c-10.4,8.8-22.4,16-35.6,20.8c-12.4,4.8-26,7.2-40.4,7.2c-32.4,0-62-13.2-83.2-34.4\
+		c-21.2-21.2-34.4-50.8-34.4-83.2c0-13.6,2.4-26.8,6.4-38.8c4.4-12.8,10.8-24.4,19.2-34.4c3.6-4.4,2.8-10.8-1.6-14.4\
+		c-2.8-2-6-2.8-9.2-2c-34,9.2-63.6,29.6-84.8,56.8c-20.4,26.8-32.8,60-32.8,96.4c0,43.6,17.6,83.2,46.4,112s68.4,46.4,112,46.4\
+		c36.8,0,70.8-12.8,98-34c27.6-21.6,47.6-52.4,56-87.6C314.4,184.853,311.2,179.253,305.6,178.053z M244.4,261.653\
+		c-23.2,18.4-52.8,29.6-85.2,29.6c-38,0-72.4-15.6-97.2-40.4c-24.8-24.8-40.4-59.2-40.4-97.2c0-31.6,10.4-60.4,28.4-83.6\
+		c12.4-16,28-29.2,46-38.4c-2,4.4-4,8.8-5.6,13.6c-5.2,14.4-7.6,29.6-7.6,45.6c0,38,15.6,72.8,40.4,97.6s59.6,40.4,97.6,40.4\
+		c16.8,0,32.8-2.8,47.6-8.4c5.2-2,10.4-4,15.2-6.4C274,232.453,260.8,248.853,244.4,261.653z"/>\
+		</svg>';
+		qsl('#ThemeLink').setAttribute('href', '/CSS/Pallete2.css');
+	} else {
+		localStorage.setItem('Theme', 1);
+		element.innerHTML = '<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 312.812 312.812" style="enable-background:new 0 0 312.812 312.812;" xml:space="preserve">\
+		<path d="M305.2,178.159c-3.2-0.8-6.4,0-9.2,2c-10.4,8.8-22.4,16-35.6,20.8c-12.4,4.8-26,7.2-40.4,7.2c-32.4,0-62-13.2-83.2-34.4\
+		c-21.2-21.2-34.4-50.8-34.4-83.2c0-13.6,2.4-26.8,6.4-38.8c4.4-12.8,10.8-24.4,19.2-34.4c3.6-4.4,2.8-10.8-1.6-14.4\
+		c-2.8-2-6-2.8-9.2-2c-34,9.2-63.6,29.6-84.8,56.8c-20.4,26.8-32.4,60-32.4,96c0,43.6,17.6,83.2,46.4,112s68,46.4,112,46.4\
+		c36.8,0,70.8-12.8,98-34c27.6-21.6,47.6-52.4,56-87.6C314,184.959,310.8,179.359,305.2,178.159z"/></svg>';
+		qsl('#ThemeLink').setAttribute('href', '/CSS/Pallete1.css');
+	}
 }
 
 // Carrega Páginas
@@ -115,7 +151,7 @@ function LoadBlocks (num) {
 	Block.style.display = 'block';
 	Block.classList.add('BlockSelected', 'BlockOver');
 
-	qsl('body').removeAttribute('style');
+	qsl('body').setAttribute('style', 'overflow-x: hidden;');
 	qsl('#AnimationSpace').remove();
 	qsl('#SkipAButton').remove();
 	qsl('#MainMenu').removeAttribute('style');
@@ -160,7 +196,7 @@ function PageSwitch (num) {
 			});
 
 			qsl('.MenuSelected').removeAttribute('class');
-			qsl('body').style.overflowY = 'hidden';
+			qsl('body').setAttribute('style', 'overflow: hidden;')
 			qsla('#MainMenu li')[num].classList.add('MenuSelected');
 			qsl('.BlockOver').classList.remove('BlockSelected');
 			
@@ -191,7 +227,7 @@ function PageSwitch (num) {
 						qsl('#OffSet').style.display = 'none';
 						qsl('#OffSet').removeAttribute('class');
 						qsl('#MainMenu').removeAttribute('style');
-						qsl('body').removeAttribute('style');
+						qsl('body').setAttribute('style', 'overflow-x: hidden;')
 						
 						for (let i = 0; i < allBlocks.length - 1;i++) {
 							allBlocks[i].style.maxHeight = 'none';
@@ -223,30 +259,6 @@ function PageSwitch (num) {
 		}
 	}
 	localStorage.setItem('Page', num);
-}
-
-// Temas
-function ThemeSwitch (clickTheme) {
-	var themesIco = qsla('#FloatTheme li'),
-	 	newTheme = 'CSS/Colors' + clickTheme + '.css';
-	 	qsl('#ThemeLink').setAttribute('href', newTheme);
-	 	
-	 	switch (clickTheme) {
-	 		case 0:
-				themesIco[clickTheme].innerHTML = '<svg viewBox="0 0 16 16" class="bi bi-dice-1-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3zm5 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z">';
-				themesIco[1].innerHTML = '<svg viewBox="0 0 16 16" class="bi bi-dice-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M13 1H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/><circle cx="4" cy="4" r="1.5"/><circle cx="12" cy="12" r="1.5"/>';
-				themesIco[2].innerHTML = '<svg viewBox="0 0 16 16" class="bi bi-dice-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M13 1H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/><circle cx="4" cy="4" r="1.5"/> <circle cx="12" cy="12" r="1.5"/> <circle cx="8" cy="8" r="1.5"/>';
-	 		
-	 		case 1:
-				themesIco[clickTheme].innerHTML = '<svg viewBox="0 0 16 16" class="bi bi-dice-2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M0 3a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3zm5.5 1a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z">';
-				themesIco[0].innerHTML = '<svg viewBox="0 0 16 16" class="bi bi-dice-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M13 1H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/><circle cx="8" cy="8" r="1.5"/>';
-				themesIco[2].innerHTML = '<svg viewBox="0 0 16 16" class="bi bi-dice-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M13 1H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/><circle cx="4" cy="4" r="1.5"/> <circle cx="12" cy="12" r="1.5"/> <circle cx="8" cy="8" r="1.5"/>';
-			case 2:
-				themesIco[clickTheme].innerHTML = '<svg viewBox="0 0 16 16" class="bi bi-dice-3-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3zm2.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>';
-				themesIco[0].innerHTML = '<svg viewBox="0 0 16 16" class="bi bi-dice-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M13 1H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/><circle cx="8" cy="8" r="1.5"/>';
-				themesIco[1].innerHTML = '<svg viewBox="0 0 16 16" class="bi bi-dice-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M13 1H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/><circle cx="4" cy="4" r="1.5"/><circle cx="12" cy="12" r="1.5"/>';
-		}
-		
 }
 
 // Animação de Início//

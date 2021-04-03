@@ -7,7 +7,7 @@ $menuColor: white !default;
 
 .Block {
 	overflow: hidden;
-	box-shadow: 0 0 0 .4vw white;
+	box-shadow: 0 0 0 .4vw $w;
 	position  : absolute;
 	min-height: 100vh;
 	max-width : 100%;
@@ -32,15 +32,71 @@ $menuColor: white !default;
 	z-index : 5;
 }
 
-#ButtonConfig, #ButtonMenu {
+#ButtonConfig {
+	cursor: pointer;
+	z-index: 1000;
+	position: absolute;
+	width: 3rem;
+	padding: .65rem 1.25rem .65rem .65rem;
+	right: 0;
+	top: 12vw;
 	fill: $w;
+}
+
+#ButtonMenu {
 	display: none;
+	fill: $w;
 }
 
 #ConfigContainer {
-	display: none;
-	svg {
-		width: 2vw;
+	user-select: none;
+	margin-top: 4.5rem;
+	overflow: hidden;
+	top: 12vw;
+	right: -10rem;
+	background-color: $menuColor;
+	z-index: 999;
+	position: absolute;
+	border-radius: .75rem 0 0 .75rem;
+	transition: right 300ms ease;
+	padding-top: .5rem;
+	padding-bottom: .75rem;
+	p {
+		text-align: center;
+		font: bold 2rem Font1;
+	}
+	ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		padding: .5rem;
+		li {
+			cursor: pointer;
+			padding: .5rem;
+			list-style: none;
+			width: 2rem;
+			svg {
+				width: 100%;
+			}
+		}
+	}
+	#AnimationConfigContainer {
+		input[type="checkbox"] {
+			display: none;
+		}
+		input[type="checkbox"]:checked ~ label {
+			color: red;
+		}
+		display: flex;
+		width: 100%;
+		font: normal 2rem Font1;
+		label {
+			border-radius: 0 0 0 .75rem;
+			text-align: center;
+			width: 100%;
+			padding: 0 1rem;
+		}
 	}
 }
 
@@ -135,25 +191,27 @@ $menuColor: white !default;
 			user-select: none;
 			padding: 1.25rem 0;
 			text-align: center;
-			a {
-				margin-left: 4rem;
-				&:first-of-type {
-					margin-left: 0;
-				}
-			}
 			span {
-				img {
+				svg {
+					fill: $w;
 					width: 5rem;
 					transition: filter 400ms ease;
+					filter: drop-shadow(0px 3vw 1vw $w);
 				}
-				&:hover img {
-					filter: blur(.6vw);
+				&:hover svg {
+					filter: drop-shadow(0px 2vw 2vw $w) blur(.6vw);
 				}
-				a:hover {
-					margin-top: -.5rem;
+				a {
+					margin-left: 4rem;
+					&:hover {
+						margin-top: -.5rem;
+					}
+					&:first-of-type {
+						margin-left: 0;
+					}
 				}
-				img:hover {
-					filter: blur(0)!important;
+				svg:hover {
+					filter: drop-shadow(0px 0vw 1vw $w) blur(0)!important;
 				}
 			}
 		}
@@ -379,7 +437,7 @@ $menuColor: white !default;
 		right: 1vw;
 		top: 0rem;
 		z-index: 4;
-		fill: white;
+		fill: $w;
 	}
 
 	#ButtonConfig {
@@ -387,6 +445,14 @@ $menuColor: white !default;
 	}
 
 	#ConfigContainer {
+		padding-bottom: 0;
+		background-color: transparent;
+		margin-top: 0;
+		top: 0;
+		left: 0;
+		z-index: 0;
+		right: inherit;
+		position: relative;
 		display: none!important;
 		#FloatTheme {
 			li {
@@ -460,8 +526,9 @@ $menuColor: white !default;
 		#SocialMidias {
 			#Midias a {
 				margin-left: 0;
-				img {
+				svg {
 					width: 5rem;
+					filter: none;
 				}
 			}
 		}

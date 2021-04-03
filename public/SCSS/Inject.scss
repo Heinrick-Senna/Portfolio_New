@@ -16,7 +16,7 @@
 $w: white !default;
 
 body {
-	background-color: black;
+	background-color: $b;
 	color: $w;
 	&, * {
 		margin: 0;
