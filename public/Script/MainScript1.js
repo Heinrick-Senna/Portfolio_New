@@ -1,21 +1,21 @@
 window.onload = function () {
 	// Verify Config
-	// if (localStorage.getItem('Config') == 0) {
-	// 	qsl('#AnimationCheck').checked = false;
-	// 	LoadBlocks(localStorage.getItem('Page') || 0);
-	// } else {
-	// 	qsl('#AnimationSpace').removeAttribute('style');
-	// 	localStorage.setItem('Config', 0);
-	// 	// Animations Function
-	// 	setTimeout(function(){
-	// 		AnimationIn();
-	// 		qsl('#SkipAButton button').onclick = function () {
-	// 			AnimationSkip();
+	if (localStorage.getItem('Config') == 0) {
+		qsl('#AnimationCheck').checked = false;
+		LoadBlocks(localStorage.getItem('Page') || 0);
+	} else {
+		qsl('#AnimationSpace').removeAttribute('style');
+		localStorage.setItem('Config', 0);
+		// Animations Function
+		setTimeout(function(){
+			AnimationIn();
+			qsl('#SkipAButton button').onclick = function () {
+				AnimationSkip();
 				
-	// 		};
-	// 	}, 15);
-	// }
-	LoadBlocks(0)
+			};
+		}, 15);
+	}
+	
 	var themeSwtich = 0;
 	if (localStorage.getItem('Theme') == 0) {
 		themeSwtich++;
