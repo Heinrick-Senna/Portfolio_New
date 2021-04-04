@@ -529,6 +529,9 @@ $claimed_menu: white !default;
 				list-style: none;
 			}
 			svg {
+				@if $w == white {
+					fill: $w;
+				}
 				max-width: 5rem;
 			}
 		}

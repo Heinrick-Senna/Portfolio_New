@@ -63,11 +63,13 @@ window.onload = function () {
 	for (var i = 0; i < menuIcons.length; i++) {
 		(function(index){
 			menuIcons[i].onclick = () => {
-				if (window.innerWidth < 576) {
-					MenuVerify = 1;
-					CloseOpenMenu();
+				if (localStorage.getItem('Page') != index) {
+					if (window.innerWidth < 576) {
+						MenuVerify = 1;
+						CloseOpenMenu();
+					}
+					PageSwitch(index) ; 
 				}
-				localStorage.getItem('Page') == index ? null : PageSwitch(index) ; 
 			}    
 		})(i);
 	}
