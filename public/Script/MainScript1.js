@@ -1,20 +1,21 @@
 window.onload = function () {
-	// Verificar Config
-	if (localStorage.getItem('Config') == 0) {
-		qsl('#AnimationCheck').checked = false;
-		LoadBlocks(localStorage.getItem('Page') || 0);
-	} else {
-		qsl('#AnimationSpace').removeAttribute('style');
-		localStorage.setItem('Config', 0);
-		// Funções de Animação
-		setTimeout(function(){
-			AnimationIn();
-			qsl('#SkipAButton button').onclick = function () {
-				AnimationSkip();
+	// Verify Config
+	// if (localStorage.getItem('Config') == 0) {
+	// 	qsl('#AnimationCheck').checked = false;
+	// 	LoadBlocks(localStorage.getItem('Page') || 0);
+	// } else {
+	// 	qsl('#AnimationSpace').removeAttribute('style');
+	// 	localStorage.setItem('Config', 0);
+	// 	// Animations Function
+	// 	setTimeout(function(){
+	// 		AnimationIn();
+	// 		qsl('#SkipAButton button').onclick = function () {
+	// 			AnimationSkip();
 				
-			};
-		}, 15);
-	}
+	// 		};
+	// 	}, 15);
+	// }
+	LoadBlocks(0)
 	var themeSwtich = 0;
 	if (localStorage.getItem('Theme') == 0) {
 		themeSwtich++;
@@ -35,30 +36,29 @@ window.onload = function () {
 		CloseOpenConfig();
 	}
 
-	// Abrir e Fechar Configurações
+	// Open and Close Config Button
 	qsl('#ButtonConfig').addEventListener('click', () => {
 		CloseOpenConfig();
 	});
 
-	// Verificar Configurações
+	// Verify Theme
 	qsl('#AnimationCheck').addEventListener('click', function(){
 		let i = this.checked ? 1 : 0 ;
 		localStorage.setItem('Config', i);
 	});
 
-	// Abrir e Fechar Menu
+	// Open and Close Menu Button
 	qsl('#ButtonMenu').addEventListener('click', () => {
 		CloseOpenMenu();
 	});
 
-	// Troca de Temas
-	
+	// Switch Themes Button
 	qsl('#FloatTheme li').addEventListener('click', function(){
 		ThemeFunctions(this, themeSwtich);
 		themeSwtich++;
 	});
 
-	// Troca de Páginas
+	// Switch Pages Button
 	let menuIcons = qsla('#MainMenu li');
 	for (var i = 0; i < menuIcons.length; i++) {
 		(function(index){
@@ -76,13 +76,13 @@ window.onload = function () {
 
 var MenuVerify = 0, ConfigVerify = 0;
 
-// Função Global
+// Global Functions
 function qsl(element) { return document.querySelector(element); }
 
 function qsla(element) { return document.querySelectorAll(element); }
 
 
-// Abrir e Fechar Menu
+// Open and Close Menu
 function CloseOpenMenu () {
 	if (qsl('#AnimationSpace') == null) {	
 		if (MenuVerify % 2 === 0) {
@@ -99,7 +99,7 @@ function CloseOpenMenu () {
 	}	
 }
 
-// Abrir e Fechar Configurações
+// Open and Close Configs
 function CloseOpenConfig () {
 	if (window.innerWidth > 576) {
 		if (ConfigVerify % 2 === 0 ) {
@@ -121,6 +121,7 @@ function CloseOpenConfig () {
 	ConfigVerify++;	
 }
 
+// Switch Themes
 function ThemeFunctions (element, n) {
 	if (n % 2 === 0) {
 		localStorage.setItem('Theme', 0);
@@ -145,7 +146,7 @@ function ThemeFunctions (element, n) {
 	}
 }
 
-// Carrega Páginas
+// Load Pages
 function LoadBlocks (num) {
 	var Block = qsla('.Block')[num];
 	Block.style.display = 'block';
@@ -166,15 +167,16 @@ function LoadBlocks (num) {
 	}
 }
 
-// Troca Páginas
+// Switch Pages
 function PageSwitch (num) {
 
-	var allBlocks = qsla('.Block');
+	let allBlocks = qsla('.Block');
 	if(window.innerWidth > 576) {
 		qsl('#MainMenu').style.opacity = '0';		
 		setTimeout(function(){
-			var OffSet = qsl('#OffSet'),
-				Block = allBlocks[num], vHeight = (window.innerHeight * 0.01);
+			let OffSet = qsl('#OffSet'),
+				Block = allBlocks[num], 
+				vHeight = (window.innerHeight * 0.01);
 			
 			OffSet.style.display = 'block';
 			OffSet.classList.add('Opaque');
@@ -261,13 +263,13 @@ function PageSwitch (num) {
 	localStorage.setItem('Page', num);
 }
 
-// Animação de Início//
+// Animation of Beginning 
 function AnimationIn () {
-	var AnimSpace = qsl('#AnimationSpace'),
+	let AnimSpace = qsl('#AnimationSpace'),
 		Imgs = qsla('.LogoPart'),
 		Names = qsla('.AnimationName');
 
-	// Abrindo Animação
+	// Open Animation
 	Imgs[0].style.marginTop = '-17.5%';
 	Imgs[1].style.marginTop = '11.5%';
 	Imgs[1].setAttribute('style', 'margin-top:11.5%;-webkit-mask-position: 0 53.8%, center!important;');
@@ -297,9 +299,9 @@ function AnimationIn () {
 }
 
 
-// Substituindo Animação Início
+// Skip Animation
 function AnimationSkip () {
-	var Cover = qsl('#BlackScreen');
+	let Cover = qsl('#BlackScreen');
 	Cover.style.transform = 'scaleY(1)';
 	Cover.style.transformOrigin = 'top';
 
@@ -320,9 +322,9 @@ function AnimationSkip () {
 	}, 1000);
 }
 
-// Função que escreve textos
+// Function that write texts
 function AnimationText (text, element, speed) {
-	var i = 0;
+	let i = 0;
 		setInterval(function() {
 		if (i < text.length) {
 			element.append(text.charAt(i));
@@ -330,11 +332,11 @@ function AnimationText (text, element, speed) {
 		}}, speed);
 }
 
-// Animações Aba Home
+// Animations Home
 function BannerInfo () {
-	var ptexts = ['Esse é o meu site Front-End.', 'Seja Bem-Vindo!', 'Sinta-se a vontade para navegar.'],
+	let ptexts = ['Esse é o meu site Front-End.', 'Seja Bem-Vindo!', 'Sinta-se a vontade para navegar.'],
 		element = qsl('.bannerText');
-	var i1 = 0, i2 = 0, i3 = 0;
+	let i1 = 0, i2 = 0, i3 = 0;
 		element.innerHTML = '';
 		AnimationText(ptexts[0], element, 115);
 
@@ -371,7 +373,7 @@ function BannerInfo () {
 		}, 1000);
 }
 
-// Animação Aba Conhecimentos
+// Animation Knowledge Tab
 function AnimationKnowledge (valueS) {
 	let strings = ['CSS', 'HTML 5', 'GIT', 'PhotoShop', 'React', 'Javascript', 'Node.js', 'SASS', 'Typescript', 'Vue.js', 'Docker', 'MongoDB']
 	let itemspan = qsla('.KnowText');
