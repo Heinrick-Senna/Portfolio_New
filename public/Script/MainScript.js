@@ -1,11 +1,25 @@
 window.onload = function () {
+	var themeSwtich = 0;
+	if (localStorage.getItem('Theme') == 0) {
+		themeSwtich++;
+		ThemeFunctions(qsl('#ConfigContainer li'), 0);
+	} else {
+		ThemeFunctions(qsl('#ConfigContainer li'), 1);
+	}
+
 	// Verify Config
 	if (localStorage.getItem('Config') == 0) {
 		qsl('#AnimationCheck').checked = false;
 		LoadBlocks(localStorage.getItem('Page') || 0);
 	} else {
+		if (localStorage.getItem('Config') == null) {
+			localStorage.setItem('Config', 0);
+		} else {
+			qsl('#AnimationCheck').checked = true;
+		}
 		qsl('#AnimationSpace').removeAttribute('style');
-		localStorage.setItem('Config', 0);
+		qsl('#SkipAButton').removeAttribute('style');
+		
 		// Animations Function
 		setTimeout(function(){
 			AnimationIn();
@@ -16,13 +30,7 @@ window.onload = function () {
 		}, 15);
 	}
 	
-	var themeSwtich = 0;
-	if (localStorage.getItem('Theme') == 0) {
-		themeSwtich++;
-		ThemeFunctions(qsl('#ConfigContainer li'), 0);
-	} else {
-		ThemeFunctions(qsl('#ConfigContainer li'), 1);
-	}
+
 
 	BannerInfo();
 
@@ -42,7 +50,7 @@ window.onload = function () {
 	});
 
 	// Verify Theme
-	qsl('#AnimationCheck').addEventListener('click', function(){
+	qsl('#AnimationCheck').addEventListener('click', function() {
 		let i = this.checked ? 1 : 0 ;
 		localStorage.setItem('Config', i);
 	});
