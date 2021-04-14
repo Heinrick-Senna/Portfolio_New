@@ -29,11 +29,10 @@ app.listen(app.get('port'), () => {
 });   
 
 // Primeiro Diretório
-app.get('/', function(req, res) {
+app.get('/',(req, res)=>{
 	res.render('Home');
 });
-
-// Erro 404
-app.use((req, res, next) => {
-	res.status(404).redirect('/');
+// Rediricionamento
+app.use((req, res, next)=>{
+	res.redirect('/');
 })
