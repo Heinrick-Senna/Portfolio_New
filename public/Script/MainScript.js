@@ -72,10 +72,6 @@ window.onload = function () {
 		(function(index){
 			menuIcons[i].onclick = () => {
 				if (localStorage.getItem('Page') != index) {
-					if (window.innerWidth < 576) {
-						MenuVerify = 1;
-						CloseOpenMenu();
-					}
 					PageSwitch(index) ; 
 				}
 			}    

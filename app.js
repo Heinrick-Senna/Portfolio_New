@@ -26,13 +26,16 @@ require("dotenv-safe").config();
 // iniciando Servidor
 app.listen(app.get('port'), () => {
 	console.log('http://' + ip.address() + ':' + app.get('port'));
-});   
+});
+
+
 
 // Primeiro Diretório
 app.get('/',(req, res)=>{
 	res.render('Home');
 });
+
 // Rediricionamento
 app.use((req, res, next)=>{
-	res.redirect('/');
+	res.redirect(301, '/');
 })
